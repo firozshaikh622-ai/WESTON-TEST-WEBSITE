@@ -136,7 +136,7 @@
     var AMOUNTY = 30;
 
     var scene = new THREE.Scene();
-    scene.fog = new THREE.Fog(0x13001C, 1800, 9000);
+    scene.fog = new THREE.Fog(0x0C0C0C, 1800, 9000);
 
     var camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 10000);
     camera.position.set(0, 320, 1100);
@@ -152,7 +152,7 @@
     for (var ix = 0; ix < AMOUNTX; ix++) {
       for (var iy = 0; iy < AMOUNTY; iy++) {
         positions.push(ix * SEPARATION - (AMOUNTX * SEPARATION) / 2, 0, iy * SEPARATION - (AMOUNTY * SEPARATION) / 2);
-        colors.push(1.0, 0.55, 0.1);
+        colors.push(0.79, 0.64, 0.15);
       }
     }
 
