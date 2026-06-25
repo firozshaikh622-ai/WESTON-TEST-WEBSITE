@@ -6,7 +6,16 @@
 <meta name="description" content="Weston Engineers is a project management consultancy in New Town, Rajarhat, Kolkata, delivering site supervision, quality control, and construction management across West Bengal."/>
 <title>Weston Engineers — Project Management Consultancy, Kolkata</title>
 <link rel="stylesheet" href="styles.css"/>
-<script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
 </head>
 <body>
 
@@ -231,7 +240,8 @@
   <div class="footer-bottom">Copyright &copy;2026 WESTON ENGINEERS. All rights reserved.</div>
 </footer>
 
-<script src="hero3d.js"></script>
 <script src="script.js"></script>
+<script type="module" src="hero3d.js"></script>
+<script src="scroll-reveal.js"></script>
 </body>
 </html>

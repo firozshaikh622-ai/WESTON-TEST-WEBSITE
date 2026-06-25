@@ -1,143 +1,106 @@
-// Weston Engineers — home hero: floating 3D architectural blueprint (Three.js)
+// Weston Engineers — home hero: realistic floating 3D gold-trimmed tower, scroll-driven (Three.js + GSAP)
+
+import * as THREE from 'three';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
 (function () {
-  'use strict';
   var canvas = document.getElementById('scene-canvas');
   var wrap = document.getElementById('hero-3d-wrap');
-  if (!canvas || typeof THREE === 'undefined') return;
+  if (!canvas) return;
 
   var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.15;
 
   var scene = new THREE.Scene();
-  scene.fog = new THREE.FogExp2(0x0C0C0C, 0.045);
+  scene.fog = new THREE.FogExp2(0x0C0C0C, 0.038);
+
+  // realistic studio environment for true metal/glass reflections
+  var pmrem = new THREE.PMREMGenerator(renderer);
+  scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
 
   var camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 0.1, 100);
-  camera.position.set(0, 0.4, 11);
-  camera.lookAt(0, 0.2, 0);
+  camera.position.set(0, 1.2, 14);
+  camera.lookAt(0, 1.6, 0);
 
-  scene.add(new THREE.AmbientLight(0x383838, 0.9));
-  var key = new THREE.DirectionalLight(0xFFF1D6, 1.9);
-  key.position.set(5, 6, 7);
+  scene.add(new THREE.AmbientLight(0x383838, 0.7));
+  var key = new THREE.DirectionalLight(0xFFF1D6, 2.1);
+  key.position.set(5, 8, 7);
   scene.add(key);
-  var rim = new THREE.DirectionalLight(0xC9A227, 0.9);
-  rim.position.set(-6, -2, -5);
+  var rim = new THREE.DirectionalLight(0xC9A227, 1.0);
+  rim.position.set(-6, -1, -5);
   scene.add(rim);
-  var fill = new THREE.PointLight(0xfff3d6, 0.35, 30);
-  fill.position.set(-3, 3, 4);
+  var fill = new THREE.PointLight(0xfff3d6, 0.4, 30);
+  fill.position.set(-3, 4, 4);
   scene.add(fill);
 
-  // ── BLUEPRINT TEXTURE (procedural, drawn on canvas) ──
-  function buildBlueprintTexture() {
-    var cw = 1200, ch = 1600;
-    var c = document.createElement('canvas');
-    c.width = cw; c.height = ch;
-    var ctx = c.getContext('2d');
+  // ── MATERIALS ──
+  var goldMat = new THREE.MeshPhysicalMaterial({ color: 0xC9A227, roughness: 0.2, metalness: 1.0, clearcoat: 0.7, clearcoatRoughness: 0.15, envMapIntensity: 1.4 });
+  var glassMat = new THREE.MeshPhysicalMaterial({ color: 0x0E2236, roughness: 0.18, metalness: 0.25, clearcoat: 1.0, clearcoatRoughness: 0.1, envMapIntensity: 1.1 });
 
-    ctx.fillStyle = '#1B4A78';
-    ctx.fillRect(0, 0, cw, ch);
-    var vg = ctx.createRadialGradient(cw/2, ch/2, 80, cw/2, ch/2, ch*0.75);
-    vg.addColorStop(0, 'rgba(255,255,255,0.05)');
-    vg.addColorStop(1, 'rgba(0,0,0,0.28)');
-    ctx.fillStyle = vg;
-    ctx.fillRect(0, 0, cw, ch);
+  // ── GOLD-TRIMMED GLASS TOWER ──
+  var tower = new THREE.Group();
 
-    ctx.strokeStyle = 'rgba(255,255,255,0.07)';
-    ctx.lineWidth = 1;
-    for (var gx = 0; gx <= cw; gx += 40) { ctx.beginPath(); ctx.moveTo(gx, 0); ctx.lineTo(gx, ch); ctx.stroke(); }
-    for (var gy = 0; gy <= ch; gy += 40) { ctx.beginPath(); ctx.moveTo(0, gy); ctx.lineTo(cw, gy); ctx.stroke(); }
+  var tiers = [
+    { w: 3.6, d: 3.6, h: 3.4, y: 1.7 },
+    { w: 2.5, d: 2.5, h: 2.6, y: 0 },
+    { w: 1.6, d: 1.6, h: 2.0, y: 0 }
+  ];
 
-    ctx.strokeStyle = 'rgba(230,238,250,0.9)';
-    ctx.lineWidth = 3;
-    ctx.strokeRect(120, 140, cw - 240, ch - 460);
+  var cursorY = 0;
+  tiers.forEach(function (tier, idx) {
+    var body = new THREE.Mesh(new THREE.BoxGeometry(tier.w, tier.h, tier.d), glassMat);
+    body.position.y = cursorY + tier.h / 2;
+    tower.add(body);
 
-    // interior partitions
-    ctx.lineWidth = 2;
-    ctx.beginPath(); ctx.moveTo(120, 560); ctx.lineTo(cw - 360, 560); ctx.stroke();
-    ctx.beginPath(); ctx.moveTo(cw - 360, 560); ctx.lineTo(cw - 360, ch - 320); ctx.stroke();
-    ctx.beginPath(); ctx.moveTo(420, 140); ctx.lineTo(420, 560); ctx.stroke();
+    // gilded corner trim running the height of this tier
+    var trimSize = 0.09;
+    var offX = tier.w / 2 - trimSize / 2;
+    var offZ = tier.d / 2 - trimSize / 2;
+    [[offX, offZ], [-offX, offZ], [offX, -offZ], [-offX, -offZ]].forEach(function (pos) {
+      var trim = new THREE.Mesh(new THREE.BoxGeometry(trimSize, tier.h + 0.06, trimSize), goldMat);
+      trim.position.set(pos[0], cursorY + tier.h / 2, pos[1]);
+      tower.add(trim);
+    });
 
-    // door swing arcs
-    ctx.strokeStyle = 'rgba(230,238,250,0.55)';
-    ctx.lineWidth = 1.5;
-    ctx.beginPath(); ctx.arc(420, 560, 90, Math.PI, Math.PI * 1.5); ctx.stroke();
-    ctx.beginPath(); ctx.arc(cw - 360, 760, 90, Math.PI * 0.5, Math.PI); ctx.stroke();
-
-    // dimension lines
-    function dim(x1, y1, x2, y2, label) {
-      ctx.strokeStyle = 'rgba(230,238,250,0.5)';
-      ctx.lineWidth = 1;
-      ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
-      ctx.fillStyle = 'rgba(230,238,250,0.85)';
-      ctx.font = '20px Georgia';
-      var mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
-      ctx.save();
-      ctx.translate(mx, my - 8);
-      ctx.fillText(label, 0, 0);
-      ctx.restore();
+    // gold ledge band at the base of this tier (skip the ground floor)
+    if (idx > 0) {
+      var bandH = 0.12;
+      var band = new THREE.Mesh(new THREE.BoxGeometry(tier.w + 0.3, bandH, tier.d + 0.3), goldMat);
+      band.position.y = cursorY + bandH / 2;
+      tower.add(band);
     }
-    dim(120, 95, cw - 120, 95, "14.60 M");
-    dim(60, 140, 60, ch - 320, "21.30 M");
 
-    // compass rose
-    ctx.save();
-    ctx.translate(200, 240);
-    ctx.strokeStyle = 'rgba(201,162,39,0.9)';
-    ctx.lineWidth = 2;
-    ctx.beginPath(); ctx.arc(0, 0, 46, 0, Math.PI * 2); ctx.stroke();
-    ctx.beginPath(); ctx.moveTo(0, -38); ctx.lineTo(-9, 6); ctx.lineTo(9, 6); ctx.closePath();
-    ctx.fillStyle = 'rgba(201,162,39,0.9)'; ctx.fill();
-    ctx.fillStyle = 'rgba(230,238,250,0.9)';
-    ctx.font = 'bold 18px Georgia';
-    ctx.textAlign = 'center';
-    ctx.fillText('N', 0, -50);
-    ctx.restore();
-    ctx.textAlign = 'left';
+    // a few horizontal window-mullion accents per tier (thin gold strips)
+    var bandsPerTier = Math.max(1, Math.round(tier.h / 1.1));
+    for (var b = 1; b < bandsPerTier; b++) {
+      var my = cursorY + (tier.h / bandsPerTier) * b;
+      var mullion = new THREE.Mesh(new THREE.BoxGeometry(tier.w + 0.02, 0.035, tier.d + 0.02), goldMat);
+      mullion.position.y = my;
+      tower.add(mullion);
+    }
 
-    // title block
-    var tbY = ch - 280;
-    ctx.strokeStyle = 'rgba(201,162,39,0.9)';
-    ctx.lineWidth = 2;
-    ctx.strokeRect(120, tbY, cw - 240, 180);
-    ctx.beginPath(); ctx.moveTo(120, tbY + 60); ctx.lineTo(cw - 120, tbY + 60); ctx.stroke();
+    cursorY += tier.h;
+  });
 
-    ctx.fillStyle = '#EDEAE3';
-    ctx.font = '900 34px Georgia';
-    ctx.fillText('WESTON ENGINEERS', 150, tbY + 42);
-    ctx.font = '18px Georgia';
-    ctx.fillStyle = 'rgba(237,234,227,0.75)';
-    ctx.fillText('PROJECT MANAGEMENT CONSULTANCY  ·  KOLKATA & WEST BENGAL', 150, tbY + 100);
-    ctx.fillText('DRAWING NO. WE-2026-01      SCALE 1:100      REV A', 150, tbY + 135);
+  // spire on top
+  var spire = new THREE.Mesh(new THREE.ConeGeometry(0.16, 1.3, 16), goldMat);
+  spire.position.y = cursorY + 0.65;
+  tower.add(spire);
+  var spireBall = new THREE.Mesh(new THREE.SphereGeometry(0.09, 16, 16), goldMat);
+  spireBall.position.y = cursorY + 1.35;
+  tower.add(spireBall);
 
-    // faint monogram watermark
-    ctx.save();
-    ctx.globalAlpha = 0.05;
-    ctx.translate(cw / 2, ch / 2 - 100);
-    ctx.rotate(-0.4);
-    ctx.fillStyle = '#E0BD4E';
-    ctx.font = '900 420px Georgia';
-    ctx.textAlign = 'center';
-    ctx.fillText('W', 0, 0);
-    ctx.restore();
+  tower.position.y = -2.6;
+  scene.add(tower);
 
-    var tex = new THREE.CanvasTexture(c);
-    tex.anisotropy = 4;
-    return tex;
-  }
-
-  var W = 5.6, H = 7.4, DEPTH = 0.06;
-  var frontTex = buildBlueprintTexture();
-  var edgeMat = new THREE.MeshStandardMaterial({ color: 0xC9A227, roughness: 0.35, metalness: 0.7 });
-  var frontMat = new THREE.MeshStandardMaterial({ map: frontTex, roughness: 0.7, metalness: 0.05 });
-  var backMat = new THREE.MeshStandardMaterial({ color: 0x0E2236, roughness: 0.85, metalness: 0.05 });
-
-  var sheetGeo = new THREE.BoxGeometry(W, H, DEPTH);
-  var sheet = new THREE.Mesh(sheetGeo, [edgeMat, edgeMat, edgeMat, edgeMat, frontMat, backMat]);
-  sheet.rotation.set(-0.12, 0.5, 0.05);
-  scene.add(sheet);
-
-  // soft contact shadow beneath the sheet
+  // soft contact shadow beneath the tower
   var shadowCanvas = document.createElement('canvas');
   shadowCanvas.width = 256; shadowCanvas.height = 256;
   var sctx = shadowCanvas.getContext('2d');
@@ -153,7 +116,7 @@
   scene.add(shadowMesh);
 
   // ── DRIFTING GOLD DUST PARTICLES ──
-  var DUST = 140;
+  var DUST = 160;
   var dustPos = new Float32Array(DUST * 3);
   for (var i = 0; i < DUST; i++) {
     dustPos[i * 3] = (Math.random() - 0.5) * 16;
@@ -162,39 +125,65 @@
   }
   var dustGeo = new THREE.BufferGeometry();
   dustGeo.setAttribute('position', new THREE.BufferAttribute(dustPos, 3));
-  var dustMat = new THREE.PointsMaterial({ color: 0xE0BD4E, size: 0.035, transparent: true, opacity: 0.55, blending: THREE.AdditiveBlending, depthWrite: false });
+  var dustMat = new THREE.PointsMaterial({ color: 0xE0BD4E, size: 0.035, transparent: true, opacity: 0.65, blending: THREE.AdditiveBlending, depthWrite: false });
   var dust = new THREE.Points(dustGeo, dustMat);
   scene.add(dust);
 
-  // ── SCROLL PARALLAX (CSS transform on wrapper) ──
-  var heroEl = document.querySelector('.hero');
-  function syncParallax() {
-    if (!wrap || !heroEl) return;
-    var heroH = heroEl.offsetHeight || window.innerHeight;
-    var progress = Math.max(0, Math.min(1, window.scrollY / heroH));
-    wrap.style.transform = 'translateY(' + (progress * -70) + 'px) scale(' + (1 - progress * 0.1) + ')';
-    wrap.style.opacity = String(1 - progress * 1.15);
+  // ── BLOOM POST-PROCESSING (soft glow on gold + dust) ──
+  var composer = new EffectComposer(renderer);
+  composer.addPass(new RenderPass(scene, camera));
+  var bloom = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 0.55, 0.4, 0.78);
+  composer.addPass(bloom);
+  composer.addPass(new OutputPass());
+
+  // ── SCROLL-DRIVEN MOTION (GSAP ScrollTrigger scrub + CSS parallax) ──
+  var scrollSpin = 0;
+  var gsapReady = typeof window.gsap !== 'undefined' && typeof window.ScrollTrigger !== 'undefined';
+  if (gsapReady) {
+    window.gsap.registerPlugin(window.ScrollTrigger);
+    window.ScrollTrigger.create({
+      trigger: '.hero',
+      start: 'top top',
+      end: 'bottom top',
+      scrub: true,
+      onUpdate: function (self) {
+        scrollSpin = self.progress * Math.PI * 1.6;
+        if (wrap) {
+          wrap.style.transform = 'translateY(' + (self.progress * -90) + 'px) scale(' + (1 - self.progress * 0.12) + ')';
+          wrap.style.opacity = String(1 - self.progress * 1.15);
+        }
+      }
+    });
+  } else {
+    var heroEl = document.querySelector('.hero');
+    window.addEventListener('scroll', function () {
+      if (!wrap || !heroEl) return;
+      var heroH = heroEl.offsetHeight || window.innerHeight;
+      var p = Math.max(0, Math.min(1, window.scrollY / heroH));
+      scrollSpin = p * Math.PI * 1.6;
+      wrap.style.transform = 'translateY(' + (p * -90) + 'px) scale(' + (1 - p * 0.12) + ')';
+      wrap.style.opacity = String(1 - p * 1.15);
+    }, { passive: true });
   }
-  window.addEventListener('scroll', syncParallax, { passive: true });
-  syncParallax();
 
   var t = 0;
   function animate() {
     requestAnimationFrame(animate);
     t += 0.012;
 
-    sheet.rotation.y = 0.5 + t * 0.35;
-    sheet.rotation.x = -0.12 + Math.sin(t * 0.6) * 0.05;
-    sheet.position.y = Math.sin(t * 0.8) * 0.28;
+    tower.rotation.y = 0.6 + t * 0.28 + scrollSpin;
+    tower.position.y = -2.6 + Math.sin(t * 0.8) * 0.25;
 
     dust.rotation.y = t * 0.03;
 
-    renderer.render(scene, camera);
+    composer.render();
   }
   animate();
 
   window.addEventListener('resize', function () {
     renderer.setSize(window.innerWidth, window.innerHeight);
+    composer.setSize(window.innerWidth, window.innerHeight);
+    bloom.setSize(window.innerWidth, window.innerHeight);
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
   }, { passive: true });
