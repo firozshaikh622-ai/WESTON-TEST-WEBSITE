@@ -449,6 +449,9 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
 .footer-brand-head img { height: 4rem; width: 4rem; object-fit: contain; background: var(--cream); border-radius: 0.6rem; padding: 0.4rem; }
 .footer-brand-head span { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.5rem; color: var(--cream); }
 .footer-brand p { font-size: 1.35rem; font-weight: 300; line-height: 1.8; color: var(--text-dim); max-width: 38rem; }
+.footer-social { display: flex; gap: 1.6rem; margin-top: 0.6rem; flex-wrap: wrap; }
+.footer-social a { font-size: 1.25rem; font-weight: 500; color: var(--text-dim); border-bottom: 1px solid transparent; padding-bottom: 0.2rem; transition: color 0.2s, border-color 0.2s; }
+.footer-social a:hover { color: var(--gold); border-color: var(--gold); }
 .footer-col h4 { font-family: 'Inter', sans-serif; font-size: 1.15rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--cream); margin-bottom: 2.2rem; }
 .footer-col ul li { margin-bottom: 1.1rem; }
 .footer-col ul li a, .footer-col address p, .footer-col address a { font-size: 1.35rem; font-weight: 300; color: var(--text-dim); transition: color 0.2s; line-height: 1.9; }
