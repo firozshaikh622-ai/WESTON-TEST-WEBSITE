@@ -44,7 +44,7 @@
   </url>
   <url>
     <loc>https://westonengineer.com/blog/index.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -63,6 +63,12 @@
   <url>
     <loc>https://westonengineer.com/blog/how-to-select-construction-contractor-new-town.html</loc>
     <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://westonengineer.com/blog/jv-redevelopment-new-town-landowners.html</loc>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
