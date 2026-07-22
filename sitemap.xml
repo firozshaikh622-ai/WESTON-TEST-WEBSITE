@@ -91,6 +91,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://westonengineer.com/locations/new-town.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://westonengineer.com/locations/rajarhat.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://westonengineer.com/locations/salt-lake.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://westonengineer.com/about.html</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
