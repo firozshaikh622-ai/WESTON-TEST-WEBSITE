@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://westonengineer.com/sitemap.xml
