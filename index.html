@@ -145,8 +145,10 @@
 </header>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="hero-3d-wrap" id="hero-3d-wrap"><canvas id="scene-canvas"></canvas></div>
+<section class="hero" id="hero">
+  <div class="hero-3d-wrap" id="hero-3d-wrap">
+    <video id="hero-bg-video" src="/media/airplane-landing-kolkata.mp4" muted playsinline autoplay loop preload="auto"></video>
+  </div>
   <div class="hero-overlay">
     <div class="hero-overlay-inner">
       <div class="kicker">Project Management Consultancy &#8212; Kolkata &amp; West Bengal</div>
@@ -423,8 +425,9 @@
   <div class="footer-bottom">Copyright &copy;2026 WESTON ENGINEERS. All rights reserved.</div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js" defer></script>
 <script src="/script.js" defer></script>
-<script type="module" src="/hero3d.js"></script>
 <script src="/scroll-reveal.js" defer></script>
+<script src="/hero-video.js" defer></script>
 </body>
 </html>

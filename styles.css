@@ -171,7 +171,11 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
   z-index: 1;
   will-change: transform, opacity;
 }
-#scene-canvas { display: block; width: 100%; height: 100%; }
+#hero-bg-video {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  filter: brightness(0.55) saturate(1.05);
+}
 .hero-overlay {
   position: absolute;
   left: 0; bottom: 0; width: 100%;
