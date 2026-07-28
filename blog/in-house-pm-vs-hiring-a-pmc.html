@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png"/>
+<meta name="description" content="Should a developer build an in-house project management team or hire a PMC? The real trade-offs on cost, independence, and scalability across sites."/>
+<title>In-House Project Management vs. Hiring a PMC — Weston Engineers Blog</title>
+<link rel="canonical" href="https://westonengineer.com/blog/in-house-pm-vs-hiring-a-pmc.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Weston Engineers"/>
+<meta property="og:title" content="In-House Project Management vs. Hiring a PMC"/>
+<meta property="og:description" content="Should a developer build an in-house project management team or hire a PMC? The real trade-offs on cost, independence, and scalability across sites."/>
+<meta property="og:url" content="https://westonengineer.com/blog/in-house-pm-vs-hiring-a-pmc.html"/>
+<meta property="og:image" content="https://westonengineer.com/brand_assets/WhatsApp%20Image%202026-06-12%20at%204.33.23%20PM.jpeg"/>
+<meta property="og:locale" content="en_IN"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="In-House Project Management vs. Hiring a PMC"/>
+<meta name="twitter:description" content="Should a developer build an in-house project management team or hire a PMC? The real trade-offs on cost, independence, and scalability across sites."/>
+<meta name="twitter:image" content="https://westonengineer.com/brand_assets/WhatsApp%20Image%202026-06-12%20at%204.33.23%20PM.jpeg"/>
+<link rel="stylesheet" href="/styles.css"/>
+<script defer src="/_vercel/insights/script.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "In-House Project Management vs. Hiring a PMC",
+  "description": "The real trade-offs between building an in-house project management team and hiring an external PMC — cost, independence, ramp-up time, and scalability across concurrent sites.",
+  "image": "https://westonengineer.com/brand_assets/WhatsApp%20Image%202026-06-12%20at%204.33.23%20PM.jpeg",
+  "author": { "@type": "Person", "@id": "https://westonengineer.com/about.html#firoz-shaikh", "name": "Firoz Shaikh", "jobTitle": "Founder, Weston Engineers", "url": "https://westonengineer.com/about.html" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Weston Engineers",
+    "logo": { "@type": "ImageObject", "url": "https://westonengineer.com/brand_assets/WhatsApp%20Image%202026-06-12%20at%204.33.23%20PM.jpeg" }
+  },
+  "datePublished": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "mainEntityOfPage": "https://westonengineer.com/blog/in-house-pm-vs-hiring-a-pmc.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "At what project size does hiring a PMC make sense over in-house?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Once you're running more than one site concurrently, or a single project crosses roughly a year in duration, the coordination overhead usually justifies dedicated PMC oversight over ad-hoc internal management." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does an external PMC work well alongside an in-house team?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — the common pattern is an internal point of contact for decisions and approvals, with the PMC handling day-to-day site verification, contractor coordination, and reporting." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="/index.html" class="nav-logo">
+      <img src="/brand_assets/WhatsApp Image 2026-06-12 at 4.33.23 PM.jpeg" alt="Weston Engineers"/>
+      <span class="nav-brand-text">WESTON ENGINEERS</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/blog/index.html" class="active">Blog</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="/contact.html" class="btn btn-accent nav-cta desktop-only">Get a Free Audit</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/blog/index.html" class="active">Blog</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero article-hero">
+  <div id="dotted-surface"></div>
+  <div class="page-hero-content">
+    <div class="kicker">In-House vs. Outsourced</div>
+    <h1>In-House Project Management vs. Hiring a PMC</h1>
+    <p class="article-meta">By Firoz Shaikh, Founder &#8226; Kolkata &#8226; 6 min read</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="article-body">
+
+      <p>Developers and builders scaling past their first project usually hit this decision at some point: build an internal project management team, or bring in an external PMC. Both work &#8212; the right answer depends on how many sites you're running and how consistently.</p>
+
+      <h2>The Case for an In-House Team</h2>
+      <p>An internal project management team gives you full control and institutional knowledge that accumulates project after project &#8212; the same people who managed your last site know exactly what went wrong and won't repeat it. This works best when you have a steady, multi-year pipeline that can justify fixed payroll year-round, regardless of how many sites are active at a given moment.</p>
+
+      <h2>The Case for an External PMC</h2>
+      <p>An external PMC comes with no fixed payroll cost &#8212; you pay for oversight only while a project is active. It also brings genuine independence: a PMC engaged directly by ownership has no internal politics to navigate and no incentive to protect an internal team's mistakes. And because a PMC works across multiple developers' sites, they bring outside benchmarking &#8212; they've seen what a reasonable BOQ, timeline, or defect rate looks like elsewhere, not just on your own projects.</p>
+
+      <h2>Side by Side</h2>
+      <table class="compare-table">
+        <thead><tr><th>Aspect</th><th>In-House Team</th><th>External PMC</th></tr></thead>
+        <tbody>
+          <tr><td>Cost structure</td><td>Fixed payroll, year-round</td><td>Scoped to active projects</td></tr>
+          <tr><td>Independence</td><td>Internal, reports up the same chain</td><td>Independent, accountable to ownership directly</td></tr>
+          <tr><td>Ramp-up time</td><td>Hiring and onboarding takes months</td><td>Can typically mobilize within weeks</td></tr>
+          <tr><td>Scaling across sites</td><td>Requires hiring ahead of pipeline</td><td>Scales up or down per engagement</td></tr>
+          <tr><td>Cross-project benchmarking</td><td>Limited to your own projects</td><td>Draws on multiple clients' sites</td></tr>
+        </tbody>
+      </table>
+
+      <h2>The Hybrid Model Most Kolkata Developers Actually Use</h2>
+      <p>In practice, few developers run purely one way. The common pattern is a small internal team &#8212; often just one point person &#8212; for ownership-level decisions and approvals, with an external PMC handling the daily grind of site verification, contractor coordination, and reporting. That hybrid gets you continuity where it matters most (decision-making) without carrying full-time payroll for functions that only need to scale with active project volume.</p>
+
+      <blockquote>The question isn't in-house or PMC &#8212; it's which parts of project management actually need to be in-house.</blockquote>
+
+    </div>
+
+    <div class="related-posts">
+      <h3>Related Reading</h3>
+      <ul>
+        <li><a href="/blog/what-does-a-pmc-company-do.html">What Does a PMC Company Actually Do?</a></li>
+        <li><a href="/blog/pmc-vs-general-contracting.html">PMC vs. General Contracting: What's the Difference?</a></li>
+        <li><a href="/blog/jv-redevelopment-new-town-landowners.html">Joint Venture Redevelopment in New Town: What Landowners Should Know</a></li>
+      </ul>
+    </div>
+
+    <div class="article-cta">
+      <h3>Scaling Beyond One Site?</h3>
+      <p>Weston Engineers can take on PMC oversight for one project or several concurrently &#8212; scoped to what you actually need.</p>
+      <div class="cta-btns">
+        <a href="/contact.html" class="btn btn-accent">Get a Free Project Audit</a>
+        <a href="https://wa.me/919051517176" class="btn btn-outline">WhatsApp Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-brand-head">
+        <img src="/brand_assets/WhatsApp Image 2026-06-12 at 4.33.23 PM.jpeg" alt="Weston Engineers"/>
+        <span>WESTON ENGINEERS</span>
+      </div>
+      <p>Weston Engineers is a project management consultancy based in New Town, Kolkata. With a strong focus on quality, safety, and transparent billing, we deliver reliable construction and infrastructure outcomes tailored to modern demands.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/westonengineers007/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/share/1Cx4d3sNjY/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.linkedin.com/company/weston-engineers/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://youtube.com/@westonengineers-l8j" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://whatsapp.com/channel/0029VafIEi0CnA7x4kcW5E3s" target="_blank" rel="noopener">WhatsApp Channel</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/blog/index.html">Blog</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Service Areas</h4>
+      <ul>
+        <li><a href="/locations/new-town.html">New Town</a></li>
+        <li><a href="/locations/rajarhat.html">Rajarhat</a></li>
+        <li><a href="/locations/salt-lake.html">Salt Lake</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <address>
+        <p><strong>WESTON ENGINEERS</strong></p>
+        <p>Road Dash Drone, Rajarhat</p>
+        <p>Kolkata, West Bengal 700136</p>
+        <p><a href="tel:+919051517176">+91 9051517176</a></p>
+        <p><a href="mailto:info@westonengineer.com">info@westonengineer.com</a></p>
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom">Copyright &copy;2026 WESTON ENGINEERS. All rights reserved.</div>
+</footer>
+
+<script src="/script.js" defer></script>
+<script src="/scroll-reveal.js" defer></script>
+</body>
+</html>

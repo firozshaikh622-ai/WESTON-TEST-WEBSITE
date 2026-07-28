@@ -314,6 +314,12 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
 .article-body li { margin-bottom: 0.8rem; }
 .article-body strong { color: var(--cream); font-weight: 600; }
 .article-body blockquote { border-left: 2px solid var(--gold); padding: 0.4rem 0 0.4rem 2.4rem; margin: 3rem 0; font-style: italic; color: var(--cream); font-size: 1.7rem; }
+.article-body .compare-table { width: 100%; border-collapse: collapse; margin: 0 0 2.4rem; font-size: 1.4rem; }
+.article-body .compare-table th, .article-body .compare-table td { border: 1px solid var(--border); padding: 1.2rem 1.6rem; text-align: left; }
+.article-body .compare-table th { color: var(--gold); font-weight: 700; text-transform: uppercase; font-size: 1.2rem; letter-spacing: 0.03em; background: var(--ink-soft); }
+.article-body .compare-table td { color: var(--text-soft); }
+.article-body .compare-table td:first-child { color: var(--cream); font-weight: 600; }
+@media (max-width: 700px) { .article-body .compare-table { display: block; overflow-x: auto; } }
 .article-cta { max-width: 76rem; margin: 5rem auto 0; padding: 3.6rem; background: var(--ink-soft); border: 1px solid var(--border); text-align: center; }
 .article-cta h3 { font-weight: 700; font-size: 2rem; color: var(--cream); margin-bottom: 1.2rem; }
 .article-cta p { font-size: 1.45rem; color: var(--text-soft); margin-bottom: 2.2rem; }
