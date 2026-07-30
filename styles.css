@@ -380,6 +380,9 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
 /* ── VIDEO SECTION ── */
 .video-wrap { position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; box-shadow: 0 16px 64px rgba(0,0,0,0.6); border: 1px solid var(--border); }
 .video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; }
+.video-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.4rem; }
+.video-grid-item p { margin-top: 1.2rem; font-size: 1.35rem; color: var(--text-soft); }
+@media (max-width: 700px) { .video-grid { grid-template-columns: 1fr; } }
 
 /* ── GALLERY ── */
 .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.8rem; }
