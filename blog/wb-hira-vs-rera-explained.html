@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png"/>
+<meta name="description" content="West Bengal doesn't run RERA the way neighbouring states do &#8212; a plain-language look at HIRA, and what changes if you're building in WB versus Delhi NCR."/>
+<title>West Bengal's HIRA vs. RERA: What Actually Applies to Your Project &#8212; Weston Engineers</title>
+<link rel="canonical" href="https://westonengineer.com/blog/wb-hira-vs-rera-explained.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Weston Engineers"/>
+<meta property="og:title" content="West Bengal's HIRA vs. RERA: What Actually Applies to Your Project"/>
+<meta property="og:description" content="West Bengal doesn't run RERA the way neighbouring states do &#8212; a plain-language look at HIRA, and what changes if you're building in WB versus Delhi NCR."/>
+<meta property="og:url" content="https://westonengineer.com/blog/wb-hira-vs-rera-explained.html"/>
+<meta property="og:image" content="https://westonengineer.com/brand_assets/projects/market-development-1.webp"/>
+<meta property="og:locale" content="en_IN"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="West Bengal's HIRA vs. RERA: What Actually Applies to Your Project"/>
+<meta name="twitter:description" content="West Bengal doesn't run RERA the way neighbouring states do &#8212; a plain-language look at HIRA, and what changes if you're building in WB versus Delhi NCR."/>
+<meta name="twitter:image" content="https://westonengineer.com/brand_assets/projects/market-development-1.webp"/>
+<link rel="stylesheet" href="/styles.css"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "West Bengal's HIRA vs. RERA: What Actually Applies to Your Project",
+  "description": "A plain-language explainer on West Bengal's HIRA versus the central RERA Act used in Delhi NCR states, and what changes for developers working across both.",
+  "image": "https://westonengineer.com/brand_assets/projects/market-development-1.webp",
+  "author": { "@type": "Person", "@id": "https://westonengineer.com/about.html#firoz-shaikh", "name": "Firoz Shaikh", "jobTitle": "Founder, Weston Engineers", "url": "https://westonengineer.com/about.html" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Weston Engineers",
+    "logo": { "@type": "ImageObject", "url": "https://westonengineer.com/brand_assets/WhatsApp%20Image%202026-06-12%20at%204.33.23%20PM.jpeg" }
+  },
+  "datePublished": "2026-08-23",
+  "dateModified": "2026-08-23",
+  "mainEntityOfPage": "https://westonengineer.com/blog/wb-hira-vs-rera-explained.html"
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js" defer></script>
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="/index.html" class="nav-logo">
+      <img src="/brand_assets/WhatsApp Image 2026-06-12 at 4.33.23 PM.jpeg" alt="Weston Engineers"/>
+      <span class="nav-brand-text">WESTON ENGINEERS</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/blog/index.html" class="active">Blog</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="/contact.html" class="btn btn-accent nav-cta desktop-only">Get a Free Audit</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/blog/index.html" class="active">Blog</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero article-hero">
+  <div id="dotted-surface"></div>
+  <div class="page-hero-content">
+    <div class="kicker">Regulatory Basics</div>
+    <h1>West Bengal's HIRA vs. RERA: What Actually Applies to Your Project</h1>
+    <p class="article-meta">By Firoz Shaikh, Founder &#8226; Kolkata &#8226; 6 min read</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="article-body">
+
+      <p>Most first-time developers assume RERA (the Real Estate Regulatory Authority) applies everywhere in India the same way. It doesn't. West Bengal is the outlier &#8212; and if you're building here, or across both West Bengal and <a href="/locations/index.html">Delhi NCR</a>, that difference is worth understanding before it shows up as a registration delay.</p>
+
+      <h2>West Bengal Runs HIRA, Not the Central RERA Act</h2>
+      <p>In 2017, West Bengal chose not to notify the central Real Estate (Regulation and Development) Act in the state, and instead enacted its own law &#8212; the West Bengal Housing Industry Regulation Act (HIRA), administered by the West Bengal Housing Industry Regulatory Authority. The stated intent and structural mechanics &#8212; project registration, escrow requirements, buyer grievance redress &#8212; broadly mirror what RERA does elsewhere in the country. But it's a separate act, with its own registration portal and authority, not a state-level RERA implementation. If you're used to UP RERA or Haryana RERA from projects elsewhere, don't assume the same forms, timelines, or officers carry over to a West Bengal project.</p>
+
+      <h2>What Changes for Developers Working Across Both</h2>
+      <p>For developers or investors with projects spanning both West Bengal (New Town, <a href="/locations/howrah.html">Howrah</a>, <a href="/locations/durgapur.html">Durgapur</a>, <a href="/locations/siliguri.html">Siliguri</a>) and NCR (<a href="/locations/noida.html">Noida</a> and <a href="/locations/ghaziabad.html">Ghaziabad</a> under UP RERA; <a href="/locations/gurugram.html">Gurugram</a> and <a href="/locations/faridabad.html">Faridabad</a> under Haryana RERA), the practical difference shows up in three places: which authority you register a project with before marketing it, what disclosure format buyer agreements need to follow, and which grievance forum handles a dispute if one arises. Treating HIRA compliance as "RERA with a different name" is exactly the kind of assumption that causes registration delays.</p>
+
+      <h2>This Isn't Legal Advice &#8212; It's a Reason to Ask Early</h2>
+      <p>We're a PMC and construction consultancy, not a law firm, and the specifics of HIRA or RERA compliance for your project should go through a lawyer or the relevant authority directly. What we do flag, as part of project management and due diligence, is when a client's assumptions about regulatory process don't match the state they're actually building in &#8212; because that's a compliance gap that costs time, not money, and time is the one delay a construction schedule can't buy back.</p>
+
+      <blockquote>If your project spans more than one state, the regulatory authority isn't the place to assume continuity &#8212; verify it project by project.</blockquote>
+
+    </div>
+
+    <div class="related-posts">
+      <h3>Related Reading</h3>
+      <ul>
+        <li><a href="/blog/pmc-outside-home-city-what-to-check.html">Hiring an Independent PMC Outside Your Home City: What to Actually Check</a></li>
+        <li><a href="/blog/jv-redevelopment-new-town-landowners.html">Joint Venture Redevelopment in New Town: What Landowners Should Know Before Signing</a></li>
+      </ul>
+    </div>
+
+    <div class="article-cta">
+      <h3>Building Across State Lines?</h3>
+      <p>Talk to us about coordinating PMC oversight and compliance across West Bengal and Delhi NCR projects.</p>
+      <div class="cta-btns">
+        <a href="/contact.html" class="btn btn-accent">Get a Free Project Audit</a>
+        <a href="/services/project-management-consultancy.html" class="btn btn-outline">See Our PMC Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-brand-head">
+        <img src="/brand_assets/WhatsApp Image 2026-06-12 at 4.33.23 PM.jpeg" alt="Weston Engineers"/>
+        <span>WESTON ENGINEERS</span>
+      </div>
+      <p>Weston Engineers is a project management consultancy based in New Town, Kolkata. With a strong focus on quality, safety, and transparent billing, we deliver reliable construction and infrastructure outcomes tailored to modern demands.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/westonengineers007/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/share/1Cx4d3sNjY/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.linkedin.com/company/weston-engineers/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://youtube.com/@westonengineers-l8j" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://whatsapp.com/channel/0029VafIEi0CnA7x4kcW5E3s" target="_blank" rel="noopener">WhatsApp Channel</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/blog/index.html">Blog</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Service Areas</h4>
+      <ul>
+        <li><a href="/locations/new-town.html">New Town</a></li>
+        <li><a href="/locations/rajarhat.html">Rajarhat</a></li>
+        <li><a href="/locations/salt-lake.html">Salt Lake</a></li>
+        <li><a href="/locations/index.html">View All Service Areas</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <address>
+        <p><strong>WESTON ENGINEERS</strong></p>
+        <p>Road Dash Drone, Rajarhat</p>
+        <p>Kolkata, West Bengal 700136</p>
+        <p><a href="tel:+919051517176">+91 9051517176</a></p>
+        <p><a href="mailto:info@westonengineer.com">info@westonengineer.com</a></p>
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom">Copyright &copy;2026 WESTON ENGINEERS. All rights reserved.</div>
+</footer>
+
+<script src="/script.js" defer></script>
+<script src="/scroll-reveal.js" defer></script>
+</body>
+</html>
