@@ -158,6 +158,7 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
   position: relative;
   width: 100%;
   height: 100vh;
+  height: 100dvh;
   min-height: 56rem;
   background: radial-gradient(ellipse at 50% 35%, #1a1610 0%, var(--ink) 70%);
   overflow: hidden;
@@ -174,7 +175,7 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
 #hero-bg-video {
   display: block; width: 100%; height: 100%;
   object-fit: cover; object-position: center;
-  filter: brightness(0.55) saturate(1.05);
+  filter: brightness(0.8) saturate(1.15) contrast(1.05);
 }
 .hero-overlay {
   position: absolute;
@@ -228,7 +229,7 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
   position: absolute; inset: 0; z-index: 0;
   width: 100%; height: 100%;
   object-fit: cover; object-position: center;
-  filter: brightness(0.55) saturate(1.05);
+  filter: saturate(1.15) contrast(1.05);
 }
 
 /* ── FULL-BLEED VIDEO HERO (no text overlay — text moved to the title band below) ── */
@@ -236,6 +237,7 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
   position: relative;
   width: 100%;
   height: 100vh;
+  height: 100dvh;
   min-height: 56rem;
   overflow: hidden;
   background: var(--ink);
@@ -519,6 +521,12 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
   .tilt-grid, .services-teaser-grid, .testi-strip, .process-grid, .values-grid, .contact-cards, .svc-items-grid, .gallery-grid, .blog-grid { grid-template-columns: 1fr; }
   .section { padding: 6.5rem 0; }
   .scroll-hint { display: none; }
+  /* Shorter video heroes on phones — a near-full-screen hero on small screens
+     pushes all page content below the fold with nothing else visible. */
+  .hero, .page-hero-fullvideo { height: 72vh; height: 72dvh; min-height: 42rem; }
+  .page-title-band { padding-top: 5rem; padding-bottom: 5rem; }
+  .promo-modal-overlay { padding: 1.6rem; }
+  .promo-modal { max-width: 100%; }
 }
 
 /* ── PROMO MODAL ── */
@@ -558,5 +566,5 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
 }
 .promo-modal-close:hover { background: var(--gold); color: var(--ink); transform: rotate(90deg); }
 @media (max-width: 480px) {
-  .promo-modal-close { width: 3.2rem; height: 3.2rem; font-size: 1.7rem; }
+  .promo-modal-close { width: 4rem; height: 4rem; font-size: 1.9rem; }
 }
