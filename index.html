@@ -24,6 +24,7 @@
 <meta name="twitter:title" content="Weston Engineers — Project Management Consultancy, Kolkata"/>
 <meta name="twitter:description" content="Weston Engineers — PMC in New Town, Rajarhat, Kolkata. Site supervision, quality control, and construction management across West Bengal."/>
 <meta name="twitter:image" content="https://westonengineer.com/brand_assets/WhatsApp%20Image%202026-06-12%20at%204.33.23%20PM.jpeg"/>
+<script>(function(){try{var t=localStorage.getItem('westonTheme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <link rel="stylesheet" href="/styles.css"/>
 <script defer src="/_vercel/insights/script.js"></script>
 <script type="application/ld+json">
@@ -134,6 +135,38 @@
       <li><a href="/contact.html">Contact</a></li>
     </ul>
     <div class="nav-right">
+      <div class="site-search">
+        <button class="site-search-btn" id="site-search-btn" aria-label="Search the site">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <div class="site-search-panel" id="site-search-panel">
+          <div class="site-search-input-row">
+            <input type="text" class="site-search-input" id="site-search-input" placeholder="Search pages, services, articles..." autocomplete="off"/>
+          </div>
+          <div class="site-search-results" id="site-search-results">
+            <div class="site-search-hint">Start typing to search pages, services, and articles.</div>
+          </div>
+        </div>
+      </div>
+      <div class="theme-toggle">
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Change theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.6-.7 1.6-1.7 0-.4-.2-.8-.4-1.1-.3-.3-.4-.6-.4-1.1a1.6 1.6 0 011.6-1.6h2c3 0 5.5-2.5 5.5-5.5C22 6 17.5 2 12 2z"/><circle cx="7" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="9.5" cy="7.5" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="7.5" r="1" fill="currentColor" stroke="none"/><circle cx="17" cy="12" r="1" fill="currentColor" stroke="none"/></svg>
+        </button>
+        <div class="theme-toggle-menu" id="theme-toggle-menu">
+          <button class="theme-swatch active" data-swatch="onyx" aria-label="Onyx Gold theme">
+            <svg class="theme-swatch-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </button>
+          <button class="theme-swatch" data-swatch="slate" aria-label="Slate Blue theme">
+            <svg class="theme-swatch-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </button>
+          <button class="theme-swatch" data-swatch="emerald" aria-label="Emerald Charcoal theme">
+            <svg class="theme-swatch-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </button>
+          <button class="theme-swatch" data-swatch="crimson" aria-label="Crimson Noir theme">
+            <svg class="theme-swatch-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </button>
+        </div>
+      </div>
       <a href="/contact.html" class="btn btn-accent nav-cta desktop-only">Get a Free Audit</a>
       <button class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -451,5 +484,8 @@
 <script src="/scroll-reveal.js" defer></script>
 <script src="/hero-video.js" defer></script>
 <script src="/promo-modal.js" defer></script>
+<script src="/search-index.js" defer></script>
+<script src="/site-search.js" defer></script>
+<script src="/theme-toggle.js" defer></script>
 </body>
 </html>

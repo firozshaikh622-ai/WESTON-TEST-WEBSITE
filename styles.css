@@ -15,6 +15,47 @@
   --whatsapp:  #1F9F52;
 }
 
+/* ── ALTERNATE THEMES ── */
+[data-theme="slate"] {
+  --ink:       #0A0E16;
+  --ink-soft:  #121826;
+  --ink-soft-2:#0F1420;
+  --border:    rgba(74,144,217,0.22);
+  --border-soft: rgba(74,144,217,0.12);
+  --gold:      #4A90D9;
+  --gold-bright:#6BAAE8;
+  --cream:     #E8EEF5;
+  --text-soft: #B8C4D4;
+  --text-dim:  #A0AEC0;
+  --text-faint:#78859A;
+}
+[data-theme="emerald"] {
+  --ink:       #0D1210;
+  --ink-soft:  #141C19;
+  --ink-soft-2:#101815;
+  --border:    rgba(46,158,107,0.22);
+  --border-soft: rgba(46,158,107,0.12);
+  --gold:      #2E9E6B;
+  --gold-bright:#3DBE82;
+  --cream:     #E6EDE9;
+  --text-soft: #B9C4BE;
+  --text-dim:  #A5B0AA;
+  --text-faint:#7C8880;
+}
+[data-theme="crimson"] {
+  --ink:       #0D0A0A;
+  --ink-soft:  #171212;
+  --ink-soft-2:#120E0E;
+  --border:    rgba(201,67,46,0.22);
+  --border-soft: rgba(201,67,46,0.12);
+  --gold:      #C9432E;
+  --gold-bright:#E85D42;
+  --cream:     #F0E8E4;
+  --text-soft: #C9B8B2;
+  --text-dim:  #B8A8A2;
+  --text-faint:#8A7A74;
+}
+
 html { font-size: 62.5%; scroll-behavior: smooth; }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -514,6 +555,10 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
   .mobile-nav { display: block; }
   .review-card { min-width: 100%; }
   .footer-inner { grid-template-columns: 1fr; gap: 4rem; }
+  .nav-right { gap: 1.2rem; }
+  .site-search-btn, .theme-toggle-btn { width: 3.4rem; height: 3.4rem; }
+  .site-search-btn svg { width: 1.5rem; height: 1.5rem; }
+  .theme-toggle-btn svg { width: 1.7rem; height: 1.7rem; }
 }
 @media (max-width: 640px) {
   .container, .nav-inner, .hero-overlay, .page-hero-content, .footer-inner, .footer-bottom { padding-left: 2.2rem; padding-right: 2.2rem; }
@@ -567,4 +612,104 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
 .promo-modal-close:hover { background: var(--gold); color: var(--ink); transform: rotate(90deg); }
 @media (max-width: 480px) {
   .promo-modal-close { width: 4rem; height: 4rem; font-size: 1.9rem; }
+}
+
+/* ── THEME TOGGLE ── */
+.theme-toggle { position: relative; }
+.theme-toggle-btn {
+  width: 3.8rem; height: 3.8rem;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--cream);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.theme-toggle-btn svg { width: 1.9rem; height: 1.9rem; }
+.theme-toggle-btn:hover { border-color: var(--gold); transform: rotate(20deg); }
+.theme-toggle-menu {
+  position: absolute; top: calc(100% + 1.2rem); right: 0;
+  background: var(--ink-soft);
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+  padding: 1.4rem;
+  display: none;
+  gap: 1.1rem;
+  z-index: 250;
+  min-width: 20rem;
+}
+.theme-toggle-menu.open { display: flex; flex-wrap: wrap; }
+.theme-swatch {
+  width: 4.2rem; height: 4.2rem;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+  flex-shrink: 0;
+}
+.theme-swatch:hover { transform: scale(1.08); }
+.theme-swatch.active { border-color: var(--cream); }
+.theme-swatch-check { width: 1.6rem; height: 1.6rem; opacity: 0; color: #fff; }
+.theme-swatch.active .theme-swatch-check { opacity: 1; }
+.theme-swatch[data-swatch="onyx"] { background: linear-gradient(135deg, #0C0C0C 50%, #C9A227 50%); }
+.theme-swatch[data-swatch="slate"] { background: linear-gradient(135deg, #0A0E16 50%, #4A90D9 50%); }
+.theme-swatch[data-swatch="emerald"] { background: linear-gradient(135deg, #0D1210 50%, #2E9E6B 50%); }
+.theme-swatch[data-swatch="crimson"] { background: linear-gradient(135deg, #0D0A0A 50%, #C9432E 50%); }
+@media (max-width: 480px) {
+  .theme-toggle-menu { right: -4rem; min-width: 18rem; }
+}
+
+/* ── SITE SEARCH ── */
+.site-search { position: relative; }
+.site-search-btn {
+  width: 3.8rem; height: 3.8rem;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--cream);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+.site-search-btn svg { width: 1.7rem; height: 1.7rem; }
+.site-search-btn:hover { border-color: var(--gold); }
+.site-search-panel {
+  position: absolute; top: calc(100% + 1.2rem); right: 0;
+  background: var(--ink-soft);
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+  width: 38rem; max-width: 90vw;
+  display: none;
+  z-index: 250;
+}
+.site-search-panel.open { display: block; }
+.site-search-input-row { padding: 1.6rem; border-bottom: 1px solid var(--border-soft); }
+.site-search-input {
+  width: 100%;
+  background: var(--ink);
+  border: 1px solid var(--border);
+  color: var(--cream);
+  font-family: 'Inter', sans-serif; font-size: 1.5rem; font-weight: 400;
+  padding: 1.2rem 1.4rem;
+  outline: none;
+}
+.site-search-input:focus { border-color: var(--gold); }
+.site-search-input::placeholder { color: var(--text-faint); }
+.site-search-results { max-height: 40rem; overflow-y: auto; }
+.site-search-result {
+  display: block;
+  padding: 1.4rem 1.8rem;
+  border-bottom: 1px solid var(--border-soft);
+  text-align: left;
+}
+.site-search-result:last-child { border-bottom: none; }
+.site-search-result:hover { background: var(--ink-soft-2); }
+.site-search-result-tag { font-size: 1.05rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; }
+.site-search-result-title { font-size: 1.5rem; font-weight: 600; color: var(--cream); margin-bottom: 0.3rem; }
+.site-search-result-desc { font-size: 1.3rem; font-weight: 300; color: var(--text-soft); line-height: 1.5; }
+.site-search-empty, .site-search-hint { padding: 2.4rem 1.8rem; text-align: center; color: var(--text-faint); font-size: 1.4rem; font-weight: 300; }
+@media (max-width: 480px) {
+  .site-search-panel { right: -8rem; }
 }
