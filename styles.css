@@ -242,7 +242,7 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
 }
 .hero-btns { display: flex; gap: 1.6rem; flex-wrap: wrap; justify-content: center; }
 .scroll-hint {
-  position: absolute; bottom: 3rem; right: 4rem; z-index: 2;
+  position: absolute; bottom: 7rem; right: 4rem; z-index: 2;
   font-size: 1.2rem; color: var(--text-faint); letter-spacing: 0.18em; text-transform: uppercase;
   animation: bob 2.2s ease-in-out infinite;
 }
@@ -416,6 +416,13 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
 .lead-form textarea { resize: vertical; min-height: 12rem; }
 .lead-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; }
 .form-note { font-size: 1.25rem; color: var(--text-faint); margin-top: 1rem; }
+.lead-form input[type="file"] { padding: 1rem 1.6rem; font-size: 1.3rem; color: var(--text-dim); }
+.lead-form input[type="file"]::file-selector-button {
+  background: var(--gold); color: var(--ink); border: none; border-radius: 0.2rem;
+  padding: 0.8rem 1.4rem; margin-right: 1.2rem; font-family: 'Inter', sans-serif; font-size: 1.25rem; font-weight: 600;
+  cursor: pointer; transition: background 0.2s;
+}
+.lead-form input[type="file"]::file-selector-button:hover { background: var(--gold-bright); }
 
 /* ── ABOUT: STORY / PROCESS / VALUES ── */
 .story-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 6rem; align-items: center; }
@@ -712,4 +719,35 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
 .site-search-empty, .site-search-hint { padding: 2.4rem 1.8rem; text-align: center; color: var(--text-faint); font-size: 1.4rem; font-weight: 300; }
 @media (max-width: 480px) {
   .site-search-panel { right: -8rem; }
+}
+
+/* ── WHATSAPP WIDGET ── */
+.wa-widget {
+  position: fixed;
+  right: 2rem; bottom: 2rem;
+  z-index: 90;
+}
+.wa-widget-btn {
+  display: flex; align-items: center; gap: 0.9rem;
+  background: var(--whatsapp);
+  color: #fff;
+  border-radius: 3.2rem;
+  padding: 1.3rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+  transition: padding 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+.wa-widget-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 26px rgba(0,0,0,0.45); }
+.wa-widget-btn svg { width: 2.6rem; height: 2.6rem; flex-shrink: 0; }
+.wa-widget-label {
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1.4rem; font-weight: 600;
+  transition: max-width 0.3s ease;
+}
+.wa-widget-btn:hover .wa-widget-label,
+.wa-widget-btn:focus-visible .wa-widget-label { max-width: 16rem; }
+@media (max-width: 640px) {
+  .wa-widget { right: 1.4rem; bottom: 1.4rem; }
+  .wa-widget-label { display: none; }
 }

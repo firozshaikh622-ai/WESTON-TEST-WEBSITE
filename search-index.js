@@ -281,5 +281,17 @@ var WESTON_SEARCH_INDEX = [
     "desc": "32+ construction & PMC services from Weston Engineers — site supervision, quality control, BOQ verification, and civil engineering consulting in Kolkata.",
     "url": "/services.html",
     "category": "Services"
+  },
+  {
+    "title": "Careers",
+    "desc": "Careers at Weston Engineers — join our project management consultancy in New Town, Kolkata. Submit your CV for site engineering, QC, and PM roles.",
+    "url": "/careers.html",
+    "category": "Careers"
+  },
+  {
+    "title": "Tenders & Subcontractor Quotes",
+    "desc": "Subcontractor tenders at Weston Engineers — submit your company details and quote for open construction work in New Town, Kolkata and West Bengal.",
+    "url": "/tenders.html",
+    "category": "Tenders"
   }
 ];
