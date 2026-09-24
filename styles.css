@@ -751,3 +751,10 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
   .wa-widget { right: 1.4rem; bottom: 1.4rem; }
   .wa-widget-label { display: none; }
 }
+
+/* Notes, resources, sources lists */
+.article-body ul.note-list { list-style: none; padding-left: 0; }
+.article-body ul.note-list li { padding: 1.4rem 0; border-bottom: 1px solid var(--border); }
+.article-body ul.sources li { font-size: 1.35rem; }
+.article-body .sample-flag { border: 1px solid var(--border); background: var(--ink-soft); padding: 1.2rem 1.6rem; }
+.article-body ol.q-list li { margin-bottom: 1.2rem; }

@@ -52,3 +52,26 @@ Weston Engineers operates as an independent project management consultancy, mean
 - About the company: https://westonengineer.com/about.html
 - Past projects: https://westonengineer.com/projects.html
 - Frequently asked questions: https://westonengineer.com/#faq
+
+## Pricing
+- How fees work (market-rate pricing by scope; PMC, supervision, BOQ verification, audits): https://westonengineer.com/fees.html
+
+## Kolkata construction guides
+- Construction cost per sq ft in Kolkata (2026): https://westonengineer.com/blog/construction-cost-per-sq-ft-kolkata-2026.html
+- Construction material rates in Kolkata: https://westonengineer.com/blog/construction-material-rates-kolkata.html
+- NKDA building plan sanction process (New Town): https://westonengineer.com/blog/nkda-building-plan-sanction-process.html
+- Pile foundations in Kolkata soil (IS 2911): https://westonengineer.com/blog/pile-foundation-kolkata-soil.html
+
+## IS code technical notes
+- Concrete Cover and Durability: IS 456 Requirements by Exposure: https://westonengineer.com/technical-notes/concrete-cover-durability-is-456.html
+- Concrete Cube Tests: Sampling, Testing and Acceptance (IS 456): https://westonengineer.com/technical-notes/concrete-cube-test-acceptance.html
+- Slump Test on Site: Procedure and Workability Ranges: https://westonengineer.com/technical-notes/slump-test-workability-is-456.html
+- Curing Periods and Formwork Removal Times (IS 456): https://westonengineer.com/technical-notes/curing-formwork-removal-is-456.html
+- TMT Bar Grades Explained: Fe415, Fe500, Fe500D and Fe550D (IS 1786): https://westonengineer.com/technical-notes/tmt-bar-grades-is-1786.html
+- Sand Grading Zones I to IV (IS 383): What They Mean on Site: https://westonengineer.com/technical-notes/sand-grading-zones-is-383.html
+
+## Free resources
+- Sample weekly site report, QA/QC inspection checklist, 12 questions before hiring a contractor: https://westonengineer.com/resources/
+
+## Bengali (বাংলা)
+- Bengali pages: https://westonengineer.com/bn/

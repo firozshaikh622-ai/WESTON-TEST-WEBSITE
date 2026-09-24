@@ -293,5 +293,131 @@ var WESTON_SEARCH_INDEX = [
     "desc": "Subcontractor tenders at Weston Engineers — submit your company details and quote for open construction work in New Town, Kolkata and West Bengal.",
     "url": "/tenders.html",
     "category": "Tenders"
+  },
+  {
+    "title": "How Our Fees Work",
+    "desc": "How Weston Engineers prices PMC, site supervision, BOQ verification and quality audits in Kolkata, and what changes the cost of your project.",
+    "url": "/fees.html",
+    "category": "Pricing"
+  },
+  {
+    "title": "Construction Cost per Sq Ft in Kolkata (2026)",
+    "desc": "What it costs per sq ft to build a house in Kolkata in 2026, what the rate leaves out, and how to check a contractor's per sq ft quote.",
+    "url": "/blog/construction-cost-per-sq-ft-kolkata-2026.html",
+    "category": "Article"
+  },
+  {
+    "title": "Construction Material Rates in Kolkata: Cement, Steel, Sand, Bricks",
+    "desc": "Current indicative rates for cement, TMT steel, sand, aggregate, bricks and labour in Kolkata, with tips for checking quotes and bills.",
+    "url": "/blog/construction-material-rates-kolkata.html",
+    "category": "Article"
+  },
+  {
+    "title": "NKDA Building Plan Sanction: Process, Documents and Common Delays",
+    "desc": "How building plan sanction works for New Town plots under NKDA: the online steps, documents to keep ready, and why applications get stuck.",
+    "url": "/blog/nkda-building-plan-sanction-process.html",
+    "category": "Article"
+  },
+  {
+    "title": "Pile Foundations in Kolkata Soil: Why, When and What to Check",
+    "desc": "Why many Kolkata and New Town buildings need pile foundations, the key IS 2911 requirements, and what must be checked during piling.",
+    "url": "/blog/pile-foundation-kolkata-soil.html",
+    "category": "Article"
+  },
+  {
+    "title": "IS Code Technical Notes",
+    "desc": "Plain-language technical notes on IS 456, IS 1786, IS 383 and IS 2911: cover, cube tests, slump, curing, TMT grades and sand zones.",
+    "url": "/technical-notes/",
+    "category": "Technical Note"
+  },
+  {
+    "title": "Concrete Cover and Durability: IS 456 Requirements by Exposure",
+    "desc": "Nominal cover, minimum cement content, maximum water-cement ratio and minimum grade for RCC by exposure condition, as per IS 456:2000.",
+    "url": "/technical-notes/concrete-cover-durability-is-456.html",
+    "category": "Technical Note"
+  },
+  {
+    "title": "Concrete Cube Tests: Sampling, Testing and Acceptance (IS 456)",
+    "desc": "How many concrete cubes to cast, how they are tested, and how to judge 28-day results against IS 456 acceptance criteria.",
+    "url": "/technical-notes/concrete-cube-test-acceptance.html",
+    "category": "Technical Note"
+  },
+  {
+    "title": "Slump Test on Site: Procedure and Workability Ranges",
+    "desc": "How to do a slump test on site, what the result means, and the workability ranges IS 456 recommends for footings, slabs, columns and piles.",
+    "url": "/technical-notes/slump-test-workability-is-456.html",
+    "category": "Technical Note"
+  },
+  {
+    "title": "Curing Periods and Formwork Removal Times (IS 456)",
+    "desc": "Minimum curing periods for OPC and blended cement, and IS 456 minimum times before removing formwork and props from slabs, beams and walls.",
+    "url": "/technical-notes/curing-formwork-removal-is-456.html",
+    "category": "Technical Note"
+  },
+  {
+    "title": "TMT Bar Grades Explained: Fe415, Fe500, Fe500D and Fe550D (IS 1786)",
+    "desc": "What Fe415, Fe500, Fe500D and Fe550D mean under IS 1786, their strength and elongation requirements, and how to check steel on delivery.",
+    "url": "/technical-notes/tmt-bar-grades-is-1786.html",
+    "category": "Technical Note"
+  },
+  {
+    "title": "Sand Grading Zones I to IV (IS 383): What They Mean on Site",
+    "desc": "What sand grading zones mean under IS 383, the sieve limits for Zones I to IV, and simple site checks for silt before sand goes into concrete.",
+    "url": "/technical-notes/sand-grading-zones-is-383.html",
+    "category": "Technical Note"
+  },
+  {
+    "title": "Free Resources",
+    "desc": "Free downloads from Weston Engineers: a sample weekly site report, a QA/QC inspection checklist and 12 questions to ask before hiring a contractor.",
+    "url": "/resources/",
+    "category": "Resource"
+  },
+  {
+    "title": "Sample Weekly Site Report",
+    "desc": "See exactly what a Weston weekly site report contains: progress, quality checks, materials, bill verification and open issues.",
+    "url": "/resources/sample-weekly-site-report.html",
+    "category": "Resource"
+  },
+  {
+    "title": "QA/QC Inspection Checklist for RCC, Masonry and Plaster",
+    "desc": "Free checklist for pre-pour, pour and post-pour RCC checks plus masonry and plaster, based on IS 456 and site practice.",
+    "url": "/resources/qa-qc-inspection-checklist.html",
+    "category": "Resource"
+  },
+  {
+    "title": "12 Questions to Ask Before Hiring a Contractor in Kolkata",
+    "desc": "Twelve questions to ask any construction contractor in Kolkata before you sign, and what a good answer sounds like.",
+    "url": "/resources/12-questions-before-hiring-a-contractor.html",
+    "category": "Resource"
+  },
+  {
+    "title": "নির্মাণ হোক ঠিকঠাক, একেবারে ভিত থেকে",
+    "desc": "ওয়েস্টন ইঞ্জিনিয়ার্স নিউ টাউন, কলকাতার স্বাধীন প্রজেক্ট ম্যানেজমেন্ট কনসালটেন্সি। সাইট সুপারভিশন, কোয়ালিটি কন্ট্রোল, BOQ যাচাই ও নির্মাণ কাজ।",
+    "url": "/bn/",
+    "category": "বাংলা"
+  },
+  {
+    "title": "PMC কী, আর ঠিকাদারের থেকে কীভাবে আলাদা?",
+    "desc": "PMC বা প্রজেক্ট ম্যানেজমেন্ট কনসালটেন্সি আসলে কী করে, ঠিকাদারের থেকে কীভাবে আলাদা, আর কখন আপনার প্রজেক্টে PMC দরকার।",
+    "url": "/bn/pmc.html",
+    "category": "বাংলা"
+  },
+  {
+    "title": "জয়েন্ট ভেঞ্চার রিডেভেলপমেন্ট: সই করার আগে জমির মালিকের যা জানা দরকার",
+    "desc": "নিউ টাউন, রাজারহাট বা সল্টলেকে জমি থাকলে JV চুক্তিতে সই করার আগে যে প্রশ্নগুলো করবেন, আর কেন শেয়ারিং রেশিওটাই সবচেয়ে বড় ঝুঁকি নয়।",
+    "url": "/bn/jv-redevelopment.html",
+    "category": "বাংলা"
+  },
+  {
+    "title": "ঠিকাদার বাছাই: সই করার আগে ১২টি প্রশ্ন",
+    "desc": "নিউ টাউন বা কলকাতায় নির্মাণ ঠিকাদার বাছাইয়ের আগে যে ১২টি প্রশ্ন করবেন, কোন লক্ষণ দেখলে সরে আসবেন, আর কেন স্বাধীন যাচাই দরকার।",
+    "url": "/bn/contractor-selection.html",
+    "category": "বাংলা"
+  },
+  {
+    "title": "যোগাযোগ করুন",
+    "desc": "ওয়েস্টন ইঞ্জিনিয়ার্সের সঙ্গে ফোন, WhatsApp বা ইমেলে যোগাযোগ করুন। বিনামূল্যে প্রজেক্ট অডিট ফোন বা ভিডিও কলে।",
+    "url": "/bn/contact.html",
+    "category": "বাংলা"
   }
 ];
