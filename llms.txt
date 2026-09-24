@@ -33,7 +33,7 @@ Weston Engineers is founded and led by Firoz Shaikh, a civil engineer (M.Tech) w
 Documented past projects with real client, location, and outcome details, including a government client (NKDA):
 
 - Echo Tower — G+4 residential building, Action Area II, New Town: https://westonengineer.com/case-studies/echo-tower-g4-residential.html
-- Reservoir Tank No. 20 — 1,250 lakh litre overhead water reservoir, New Town: https://westonengineer.com/case-studies/reservoir-tank-20-new-town.html
+- Reservoir Tank No. 20 — 1,250 m³ (12.5 lakh litre) overhead water reservoir, New Town: https://westonengineer.com/case-studies/reservoir-tank-20-new-town.html
 - New Town Market, Gate 1 & Gate 2 — PMC for NKDA (New Town Kolkata Development Authority): https://westonengineer.com/case-studies/new-town-market-gate1-gate2.html
 - G+4 Residential Building, Action Area II-D — PMC and main construction contractor: https://westonengineer.com/case-studies/g4-residential-aa2d.html
 - Public Art Installation & Subway Beautification, Akankha More: https://westonengineer.com/case-studies/subway-beautification-public-art.html
@@ -77,4 +77,4 @@ Weston Engineers operates as an independent project management consultancy, mean
 - Bengali pages: https://westonengineer.com/bn/
 
 ## Infrastructure PMC record
-- Weston Engineers provided project management consultancy to the contractor Azad Enterprise on 12 certified public works for KMDA, NKDA and PHED West Bengal (2016-2026), worth over Rs 35 crore: RCC elevated service reservoirs under AMRUT (Kamarhati, Bidhannagar, Haringhata, Furfura Sharif), the Arjunpukur piped water supply scheme, 1,000 mm DI and MS rising mains for arsenic-affected blocks (Haroa, Rajarhat, Bhangar-II), a 600 mm sewer line in New Town AA-IIG, the NKDA hawker market opposite Unitech Gate No. 2, and barrier-free footpaths in New Town AA-ID. Details: https://westonengineer.com/projects.html#pmc-infrastructure
+- Weston Engineers was engaged as project management consultant by its client Azad Enterprise, the contractor, on 12 certified public works for KMDA, NKDA and PHED West Bengal (2016-2026), worth over Rs 35 crore: RCC elevated service reservoirs under AMRUT (Kamarhati, Bidhannagar, Haringhata, Furfura Sharif), the Arjunpukur piped water supply scheme, 1,000 mm DI and MS rising mains for arsenic-affected blocks (Haroa, Rajarhat, Bhangar-II), a 600 mm sewer line in New Town AA-IIG, the NKDA hawker market opposite Unitech Gate No. 2, and barrier-free footpaths in New Town AA-ID. Details: https://westonengineer.com/projects.html#pmc-infrastructure

@@ -140,7 +140,7 @@ var WESTON_SEARCH_INDEX = [
   },
   {
     "title": "Reservoir Tank No. 20 Case Study",
-    "desc": "Case study: Reservoir Tank No. 20, a 1,250 lakh litre overhead reservoir in New Town — two years of supervision through stakeholder and monsoon challenges.",
+    "desc": "Case study: Reservoir Tank No. 20, a 1,250 m³ overhead reservoir in New Town — two years of supervision through stakeholder and monsoon challenges.",
     "url": "/case-studies/reservoir-tank-20-new-town.html",
     "category": "Case Study"
   },
