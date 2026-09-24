@@ -16,7 +16,7 @@ Full list: https://westonengineer.com/services.html
 
 ## Location & Service Area
 
-Kolkata, New Town, Rajarhat, and West Bengal, India. Registered address: Road Dash Drone, Rajarhat, Kolkata, West Bengal 700136.
+Kolkata, New Town, Rajarhat, and West Bengal, India. Registered address: Ambey Garden, Banglakhi Awasan, Road Dash Drone, Chinarpark, Kolkata, West Bengal 700136. Established 2015. GSTIN 19GAWPS7609F2ZQ. Enlisted civil contractor with Bidhannagar Municipal Corporation. EPFO-registered employer.
 
 ## Contact
 
@@ -33,7 +33,7 @@ Weston Engineers is founded and led by Firoz Shaikh, a civil engineer (M.Tech) w
 Documented past projects with real client, location, and outcome details, including a government client (NKDA):
 
 - Echo Tower — G+4 residential building, Action Area II, New Town: https://westonengineer.com/case-studies/echo-tower-g4-residential.html
-- Reservoir Tank No. 20 — 1,250 lakh litre overhead water reservoir, New Town: https://westonengineer.com/case-studies/reservoir-tank-20-new-town.html
+- Reservoir Tank No. 20 — 1,250 m³ (12.5 lakh litre) overhead water reservoir, New Town: https://westonengineer.com/case-studies/reservoir-tank-20-new-town.html
 - New Town Market, Gate 1 & Gate 2 — PMC for NKDA (New Town Kolkata Development Authority): https://westonengineer.com/case-studies/new-town-market-gate1-gate2.html
 - G+4 Residential Building, Action Area II-D — PMC and main construction contractor: https://westonengineer.com/case-studies/g4-residential-aa2d.html
 - Public Art Installation & Subway Beautification, Akankha More: https://westonengineer.com/case-studies/subway-beautification-public-art.html
@@ -48,7 +48,33 @@ Weston Engineers operates as an independent project management consultancy, mean
 
 ## Learn more
 
-- Blog / articles answering common questions about PMC, BOQ, and hiring a contractor: https://westonengineer.com/blog/index.html
+- Blog / articles answering common questions about PMC, BOQ, and hiring a contractor: https://westonengineer.com/blog/
 - About the company: https://westonengineer.com/about.html
 - Past projects: https://westonengineer.com/projects.html
-- Frequently asked questions: https://westonengineer.com/index.html#faq
+- Frequently asked questions: https://westonengineer.com/#faq
+
+## Pricing
+- How fees work (market-rate pricing by scope; PMC, supervision, BOQ verification, audits): https://westonengineer.com/fees.html
+
+## Kolkata construction guides
+- Construction cost per sq ft in Kolkata (2026): https://westonengineer.com/blog/construction-cost-per-sq-ft-kolkata-2026.html
+- Construction material rates in Kolkata: https://westonengineer.com/blog/construction-material-rates-kolkata.html
+- NKDA building plan sanction process (New Town): https://westonengineer.com/blog/nkda-building-plan-sanction-process.html
+- Pile foundations in Kolkata soil (IS 2911): https://westonengineer.com/blog/pile-foundation-kolkata-soil.html
+
+## IS code technical notes
+- Concrete Cover and Durability: IS 456 Requirements by Exposure: https://westonengineer.com/technical-notes/concrete-cover-durability-is-456.html
+- Concrete Cube Tests: Sampling, Testing and Acceptance (IS 456): https://westonengineer.com/technical-notes/concrete-cube-test-acceptance.html
+- Slump Test on Site: Procedure and Workability Ranges: https://westonengineer.com/technical-notes/slump-test-workability-is-456.html
+- Curing Periods and Formwork Removal Times (IS 456): https://westonengineer.com/technical-notes/curing-formwork-removal-is-456.html
+- TMT Bar Grades Explained: Fe415, Fe500, Fe500D and Fe550D (IS 1786): https://westonengineer.com/technical-notes/tmt-bar-grades-is-1786.html
+- Sand Grading Zones I to IV (IS 383): What They Mean on Site: https://westonengineer.com/technical-notes/sand-grading-zones-is-383.html
+
+## Free resources
+- Sample weekly site report, QA/QC inspection checklist, 12 questions before hiring a contractor: https://westonengineer.com/resources/
+
+## Bengali (বাংলা)
+- Bengali pages: https://westonengineer.com/bn/
+
+## Infrastructure PMC record
+- Weston Engineers was engaged as project management consultant by its client Azad Enterprise, the contractor, on 12 certified public works for KMDA, NKDA and PHED West Bengal (2016-2026), worth over Rs 35 crore: RCC elevated service reservoirs under AMRUT (Kamarhati, Bidhannagar, Haringhata, Furfura Sharif), the Arjunpukur piped water supply scheme, 1,000 mm DI and MS rising mains for arsenic-affected blocks (Haroa, Rajarhat, Bhangar-II), a 600 mm sewer line in New Town AA-IIG, the NKDA hawker market opposite Unitech Gate No. 2, and barrier-free footpaths in New Town AA-ID. Details: https://westonengineer.com/projects.html#pmc-infrastructure

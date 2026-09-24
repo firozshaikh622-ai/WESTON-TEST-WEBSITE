@@ -191,3 +191,21 @@
   })();
 
 })();
+
+// Hero videos: markup ships with a poster and data-src only, so phones and
+// data-saver connections never download the video. Larger screens load and play it.
+(function () {
+  'use strict';
+  var videos = document.querySelectorAll('video[data-src]');
+  if (!videos.length) return;
+  var conn = navigator.connection || {};
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var small = window.matchMedia && window.matchMedia('(max-width: 767px)').matches;
+  if (small || reduceMotion || conn.saveData) return;
+  videos.forEach(function (v) {
+    v.src = v.getAttribute('data-src');
+    v.preload = 'auto';
+    var p = v.play();
+    if (p && p.catch) p.catch(function () {});
+  });
+})();

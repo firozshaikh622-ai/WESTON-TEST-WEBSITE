@@ -16,12 +16,12 @@
 <meta property="og:title" content="About Us — Weston Engineers"/>
 <meta property="og:description" content="Weston Engineers is a project management consultancy based in New Town, Rajarhat, Kolkata — built on site discipline, transparent billing, and on-time delivery."/>
 <meta property="og:url" content="https://westonengineer.com/about.html"/>
-<meta property="og:image" content="https://westonengineer.com/brand_assets/WhatsApp%20Image%202026-06-12%20at%204.33.23%20PM.jpeg"/>
+<meta property="og:image" content="https://westonengineer.com/brand_assets/og/weston-og.jpg"/>
 <meta property="og:locale" content="en_IN"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="About Us — Weston Engineers"/>
 <meta name="twitter:description" content="Weston Engineers is a project management consultancy based in New Town, Rajarhat, Kolkata — built on site discipline, transparent billing, and on-time delivery."/>
-<meta name="twitter:image" content="https://westonengineer.com/brand_assets/WhatsApp%20Image%202026-06-12%20at%204.33.23%20PM.jpeg"/>
+<meta name="twitter:image" content="https://westonengineer.com/brand_assets/og/weston-og.jpg"/>
 <script>(function(){try{var t=localStorage.getItem('westonTheme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <link rel="stylesheet" href="/styles.css"/>
 <script defer src="/_vercel/insights/script.js"></script>
@@ -48,19 +48,39 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://westonengineer.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Engineering Discipline, Built Into Every Project.",
+      "item": "https://westonengineer.com/about.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <header class="navbar" id="navbar">
   <div class="nav-inner">
-    <a href="/index.html" class="nav-logo">
-      <img src="/brand_assets/WhatsApp Image 2026-06-12 at 4.33.23 PM.jpeg" alt="Weston Engineers"/>
+    <a href="/" class="nav-logo">
+      <img src="/brand_assets/weston-logo.png" alt="Weston Engineers"/>
       <span class="nav-brand-text">WESTON ENGINEERS</span>
     </a>
     <ul class="nav-links">
-      <li><a href="/index.html">Home</a></li>
+      <li><a href="/">Home</a></li>
       <li><a href="/services.html">Services</a></li>
-      <li><a href="/blog/index.html">Blog</a></li>
+      <li><a href="/blog/">Blog</a></li>
       <li><a href="/about.html" class="active">About</a></li>
       <li><a href="/projects.html">Projects</a></li>
       <li><a href="/contact.html">Contact</a></li>
@@ -76,9 +96,9 @@
   </div>
   <nav class="mobile-nav" id="mobile-nav">
     <ul>
-      <li><a href="/index.html">Home</a></li>
+      <li><a href="/">Home</a></li>
       <li><a href="/services.html">Services</a></li>
-      <li><a href="/blog/index.html">Blog</a></li>
+      <li><a href="/blog/">Blog</a></li>
       <li><a href="/about.html" class="active">About</a></li>
       <li><a href="/projects.html">Projects</a></li>
       <li><a href="/contact.html">Contact</a></li>
@@ -89,7 +109,7 @@
 </header>
 
 <section class="page-hero-fullvideo">
-  <video class="page-hero-video" src="/media/about-hero.mp4" muted playsinline autoplay loop preload="auto"></video>
+  <video class="page-hero-video" data-src="/media/about-hero.mp4" poster="/media/posters/about-hero.jpg" muted playsinline loop preload="none"></video>
 </section>
 
 <section class="section-tight page-title-band">
@@ -108,8 +128,7 @@
       <p>Our approach is simple: catch problems while they're still cheap to fix, verify every bill against work actually done, and keep contractors and timelines coordinated &#8212; so our clients aren't the ones discovering issues after the concrete is already poured.</p>
     </div>
     <div class="story-visual">
-      <!-- TODO: replace with a real Weston site-supervision photo when available -->
-      <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=900&q=80&fit=crop&auto=format" alt="Engineer reviewing construction plans on site" loading="lazy"/>
+      <img src="/brand_assets/projects/water-tower-construction-1.webp" alt="Water tower under construction with scaffolding, New Town, a Weston Engineers project" loading="lazy"/>
     </div>
   </div>
 </section>
@@ -161,6 +180,65 @@
 
 <section class="section">
   <div class="container">
+    <p class="section-kicker">&#10022; Credentials &amp; Compliance</p>
+    <h2 class="section-title">A Registered Firm You Can Verify</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="icon">EST</div>
+        <h4>Established 2015</h4>
+        <p>Over ten years of site supervision, quality control and construction work in and around New Town, Kolkata.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">GST</div>
+        <h4>GST Registered</h4>
+        <p>GSTIN 19GAWPS7609F2ZQ, registered since April 2018 for works contract services.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">BMC</div>
+        <h4>Enlisted Civil Contractor</h4>
+        <p>Permanent Certificate of Enlistment, Bidhannagar Municipal Corporation (No. 0917P78722380142), valid to November 2028.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">PF</div>
+        <h4>EPFO-Registered Employer</h4>
+        <p>Our site staff are on our own payroll with provident fund cover, registered with the EPFO since 2020.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <p class="section-kicker">&#10022; Our Team</p>
+    <h2 class="section-title">The People on Your Site</h2>
+    <p class="section-sub">Your project is supervised by a named Weston engineer, backed by a site team on our own payroll, not a rotating pool of subcontracted labour.</p>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="icon">FS</div>
+        <h4>Firoz Shaikh</h4>
+        <p>Founder &middot; M.Tech, Civil Engineering</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">WA</div>
+        <h4>Waris</h4>
+        <p>Manager</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">AS</div>
+        <h4>Asif</h4>
+        <p>Engineer</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">ST</div>
+        <h4>Site Team</h4>
+        <p>Rahish, Sanjay, Gopal, Khan, Alam, Irshad, Badri and our wider site staff.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
     <p class="section-kicker">&#10022; Why Clients Choose Us</p>
     <h2 class="section-title">Our Values</h2>
     <div class="values-grid">
@@ -191,9 +269,9 @@
 <section class="stats-section">
   <div class="container">
     <div class="stats-row">
-      <div class="stat-item"><div class="stat-num" data-target="32" data-suffix="+">0</div><div class="stat-label">Services Offered</div></div>
+      <div class="stat-item"><div class="stat-num" data-target="32" data-suffix="+">32+</div><div class="stat-label">Services Offered</div></div>
       <div class="stat-item"><div class="stat-num">5.0&#9733;</div><div class="stat-label">Client Rating</div></div>
-      <div class="stat-item"><div class="stat-num" data-target="300" data-suffix="+">0</div><div class="stat-label">Happy Customers</div></div>
+      <div class="stat-item"><div class="stat-num" data-target="300" data-suffix="+">300+</div><div class="stat-label">Happy Customers</div></div>
     </div>
   </div>
 </section>
@@ -213,7 +291,7 @@
   <div class="footer-inner">
     <div class="footer-brand">
       <div class="footer-brand-head">
-        <img src="/brand_assets/WhatsApp Image 2026-06-12 at 4.33.23 PM.jpeg" alt="Weston Engineers"/>
+        <img src="/brand_assets/weston-logo.png" alt="Weston Engineers"/>
         <span>WESTON ENGINEERS</span>
       </div>
       <p>Weston Engineers is a project management consultancy based in New Town, Kolkata. With a strong focus on quality, safety, and transparent billing, we deliver reliable construction and infrastructure outcomes tailored to modern demands.</p>
@@ -228,14 +306,18 @@
     <div class="footer-col">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="/index.html">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/services.html">Services</a></li>
-        <li><a href="/blog/index.html">Blog</a></li>
+        <li><a href="/blog/">Blog</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/projects.html">Projects</a></li>
         <li><a href="/contact.html">Contact</a></li>
         <li><a href="/careers.html">Careers</a></li>
         <li><a href="/tenders.html">Tenders</a></li>
+        <li><a href="/fees.html">How Our Fees Work</a></li>
+        <li><a href="/resources/">Free Resources</a></li>
+        <li><a href="/technical-notes/">IS Code Notes</a></li>
+        <li><a href="/bn/" lang="bn">বাংলা</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -244,21 +326,22 @@
         <li><a href="/locations/new-town.html">New Town</a></li>
         <li><a href="/locations/rajarhat.html">Rajarhat</a></li>
         <li><a href="/locations/salt-lake.html">Salt Lake</a></li>
-        <li><a href="/locations/index.html">View All Service Areas</a></li>
+        <li><a href="/locations/">View All Service Areas</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Contact Us</h4>
       <address>
         <p><strong>WESTON ENGINEERS</strong></p>
-        <p>Road Dash Drone, Rajarhat</p>
+        <p>Ambey Garden, Banglakhi Awasan,</p>
+        <p>Road Dash Drone, Chinarpark</p>
         <p>Kolkata, West Bengal 700136</p>
         <p><a href="tel:+919051517176">+91 9051517176</a></p>
         <p><a href="mailto:info@westonengineer.com">info@westonengineer.com</a></p>
       </address>
     </div>
   </div>
-  <div class="footer-bottom">Copyright &copy;2026 WESTON ENGINEERS. All rights reserved.</div>
+  <div class="footer-bottom">Copyright &copy;2026 WESTON ENGINEERS. All rights reserved. &middot; GSTIN 19GAWPS7609F2ZQ &middot; <a href="/privacy-policy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms of Use</a></div>
 </footer>
 
 <script src="/script.js" defer></script>
