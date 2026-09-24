@@ -48,7 +48,7 @@ Weston Engineers operates as an independent project management consultancy, mean
 
 ## Learn more
 
-- Blog / articles answering common questions about PMC, BOQ, and hiring a contractor: https://westonengineer.com/blog/index.html
+- Blog / articles answering common questions about PMC, BOQ, and hiring a contractor: https://westonengineer.com/blog/
 - About the company: https://westonengineer.com/about.html
 - Past projects: https://westonengineer.com/projects.html
-- Frequently asked questions: https://westonengineer.com/index.html#faq
+- Frequently asked questions: https://westonengineer.com/#faq

@@ -3,7 +3,7 @@ var WESTON_SEARCH_INDEX = [
   {
     "title": "Weston Engineers — Project Management Consultancy, Kolkata",
     "desc": "Weston Engineers — PMC in New Town, Rajarhat, Kolkata. Site supervision, quality control, and construction management across West Bengal.",
-    "url": "/index.html",
+    "url": "/",
     "category": "Home"
   },
   {
@@ -117,7 +117,7 @@ var WESTON_SEARCH_INDEX = [
   {
     "title": "Blog",
     "desc": "Construction & PM insights from Weston Engineers — practical advice on PMC, BOQ, contractor selection, and building costs in Kolkata.",
-    "url": "/blog/index.html",
+    "url": "/blog/",
     "category": "Blog"
   },
   {
@@ -159,7 +159,7 @@ var WESTON_SEARCH_INDEX = [
   {
     "title": "Service Areas",
     "desc": "Weston Engineers service areas — PMC and construction consultancy across Kolkata, West Bengal, and Delhi NCR.",
-    "url": "/locations/index.html",
+    "url": "/locations/",
     "category": "Locations"
   },
   {

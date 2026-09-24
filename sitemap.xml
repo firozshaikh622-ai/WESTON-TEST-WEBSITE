@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://westonengineer.com/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://westonengineer.com/services/project-management-consultancy.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -26,13 +26,13 @@
   </url>
   <url>
     <loc>https://westonengineer.com/services/concrete-foundation.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://westonengineer.com/services/renovation-repairs.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -43,8 +43,8 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://westonengineer.com/blog/index.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <loc>https://westonengineer.com/blog/</loc>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -110,43 +110,43 @@
   </url>
   <url>
     <loc>https://westonengineer.com/blog/wb-hira-vs-rera-explained.html</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://westonengineer.com/blog/redevelopment-renovation-older-cities.html</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://westonengineer.com/blog/pmc-outside-home-city-what-to-check.html</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://westonengineer.com/blog/new-town-freehold-vs-cooperative.html</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://westonengineer.com/blog/why-invest-in-new-town.html</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://westonengineer.com/blog/quality-construction-must-be-priority.html</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://westonengineer.com/blog/low-cost-contractors-quality-risk-new-town.html</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -169,8 +169,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://westonengineer.com/locations/index.html</loc>
-    <lastmod>2026-08-13</lastmod>
+    <loc>https://westonengineer.com/locations/</loc>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -212,31 +212,31 @@
   </url>
   <url>
     <loc>https://westonengineer.com/locations/gurugram.html</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://westonengineer.com/locations/noida.html</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://westonengineer.com/locations/ghaziabad.html</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://westonengineer.com/locations/faridabad.html</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://westonengineer.com/about.html</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -278,20 +278,32 @@
   </url>
   <url>
     <loc>https://westonengineer.com/contact.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://westonengineer.com/careers.html</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://westonengineer.com/tenders.html</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://westonengineer.com/privacy-policy.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://westonengineer.com/terms.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
   </url>
 </urlset>

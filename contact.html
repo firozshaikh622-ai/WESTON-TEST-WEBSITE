@@ -16,31 +16,48 @@
 <meta property="og:title" content="Contact — Weston Engineers"/>
 <meta property="og:description" content="Contact Weston Engineers — Road Dash Drone, Rajarhat, Kolkata, West Bengal 700136. Call, WhatsApp, or email us about your construction project."/>
 <meta property="og:url" content="https://westonengineer.com/contact.html"/>
-<meta property="og:image" content="https://westonengineer.com/brand_assets/WhatsApp%20Image%202026-06-12%20at%204.33.23%20PM.jpeg"/>
+<meta property="og:image" content="https://westonengineer.com/brand_assets/og/weston-og.jpg"/>
 <meta property="og:locale" content="en_IN"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Contact — Weston Engineers"/>
 <meta name="twitter:description" content="Contact Weston Engineers — Road Dash Drone, Rajarhat, Kolkata, West Bengal 700136. Call, WhatsApp, or email us about your construction project."/>
-<meta name="twitter:image" content="https://westonengineer.com/brand_assets/WhatsApp%20Image%202026-06-12%20at%204.33.23%20PM.jpeg"/>
+<meta name="twitter:image" content="https://westonengineer.com/brand_assets/og/weston-og.jpg"/>
 <script>(function(){try{var t=localStorage.getItem('westonTheme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <link rel="stylesheet" href="/styles.css"/>
 <script defer src="/_vercel/insights/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Weston Engineers",
+  "url": "https://westonengineer.com/contact.html",
+  "mainEntity": {
+    "@type": "GeneralContractor",
+    "@id": "https://westonengineer.com/#organization",
+    "name": "Weston Engineers",
+    "url": "https://westonengineer.com/",
+    "telephone": "+91-9051517176",
+    "email": "info@westonengineer.com",
+    "areaServed": ["Kolkata", "New Town", "Rajarhat", "Salt Lake", "West Bengal"]
+  }
+}
+</script>
 </head>
 <body>
 
 <header class="navbar" id="navbar">
   <div class="nav-inner">
-    <a href="/index.html" class="nav-logo">
-      <img src="/brand_assets/WhatsApp Image 2026-06-12 at 4.33.23 PM.jpeg" alt="Weston Engineers"/>
+    <a href="/" class="nav-logo">
+      <img src="/brand_assets/weston-logo.png" alt="Weston Engineers"/>
       <span class="nav-brand-text">WESTON ENGINEERS</span>
     </a>
     <ul class="nav-links">
-      <li><a href="/index.html">Home</a></li>
+      <li><a href="/">Home</a></li>
       <li><a href="/services.html">Services</a></li>
-      <li><a href="/blog/index.html">Blog</a></li>
+      <li><a href="/blog/">Blog</a></li>
       <li><a href="/about.html">About</a></li>
       <li><a href="/projects.html">Projects</a></li>
       <li><a href="/contact.html" class="active">Contact</a></li>
@@ -56,9 +73,9 @@
   </div>
   <nav class="mobile-nav" id="mobile-nav">
     <ul>
-      <li><a href="/index.html">Home</a></li>
+      <li><a href="/">Home</a></li>
       <li><a href="/services.html">Services</a></li>
-      <li><a href="/blog/index.html">Blog</a></li>
+      <li><a href="/blog/">Blog</a></li>
       <li><a href="/about.html">About</a></li>
       <li><a href="/projects.html">Projects</a></li>
       <li><a href="/contact.html" class="active">Contact</a></li>
@@ -69,7 +86,7 @@
 </header>
 
 <section class="page-hero-fullvideo">
-  <video class="page-hero-video" src="/media/contact-hero.mp4" muted playsinline autoplay loop preload="auto"></video>
+  <video class="page-hero-video" data-src="/media/contact-hero.mp4" poster="/media/posters/contact-hero.jpg" muted playsinline loop preload="none"></video>
 </section>
 
 <section class="section-tight page-title-band">
@@ -104,10 +121,11 @@
     <div class="contact-grid">
       <div class="contact-info">
         <h3>Tell Us About Your Project</h3>
-        <form class="lead-form" action="https://formsubmit.co/info@westonengineer.com" method="POST">
+        <form class="lead-form" action="https://formsubmit.co/info@westonengineer.com" method="POST" enctype="multipart/form-data">
           <input type="hidden" name="_subject" value="New Lead from westonengineer.com"/>
           <input type="hidden" name="_template" value="table"/>
           <input type="hidden" name="_captcha" value="true"/>
+          <input type="hidden" name="_next" value="https://westonengineer.com/thank-you.html"/>
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
           <div class="lead-form-row">
             <div>
@@ -117,6 +135,16 @@
             <div>
               <label for="lead-phone">Phone</label>
               <input type="tel" id="lead-phone" name="Phone" required/>
+            </div>
+          </div>
+          <div class="lead-form-row">
+            <div>
+              <label for="lead-email">Email</label>
+              <input type="email" id="lead-email" name="email" required/>
+            </div>
+            <div>
+              <label for="lead-location">Project location (area or pincode)</label>
+              <input type="text" id="lead-location" name="Location" placeholder="e.g. Action Area II, New Town" required/>
             </div>
           </div>
           <div>
@@ -130,9 +158,38 @@
               <option>Not Sure Yet</option>
             </select>
           </div>
+          <div class="lead-form-row">
+            <div>
+              <label for="lead-size">Plot or built-up area</label>
+              <input type="text" id="lead-size" name="Size" placeholder="e.g. 5 cottah plot / 8,000 sq ft"/>
+            </div>
+            <div>
+              <label for="lead-budget">Budget band</label>
+              <select id="lead-budget" name="Budget">
+                <option>Not decided yet</option>
+                <option>Under &#8377;50 lakh</option>
+                <option>&#8377;50 lakh &#8211; &#8377;2 crore</option>
+                <option>&#8377;2 crore &#8211; &#8377;10 crore</option>
+                <option>Above &#8377;10 crore</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="lead-timeline">When do you want to start?</label>
+            <select id="lead-timeline" name="Timeline">
+              <option>Ready to start / already on site</option>
+              <option>Within 3 months</option>
+              <option>3&#8211;6 months</option>
+              <option>6+ months away</option>
+            </select>
+          </div>
           <div>
             <label for="lead-message">Project Details</label>
-            <textarea id="lead-message" name="Message" placeholder="Location, approximate size, and timeline help us respond faster."></textarea>
+            <textarea id="lead-message" name="Message" placeholder="What stage is the project at, and what do you need help with?"></textarea>
+          </div>
+          <div>
+            <label for="lead-file">Upload drawings or your contractor's quote (optional)</label>
+            <input type="file" id="lead-file" name="attachment" accept=".pdf,.dwg,.dxf,.jpg,.jpeg,.png,.xls,.xlsx,.doc,.docx"/>
           </div>
           <button type="submit" class="btn btn-accent">Send Project Details</button>
           <p class="form-note">We reply within a few hours. No spam, ever. Prefer to talk directly? Our address and numbers are above.</p>
@@ -165,7 +222,7 @@
   <div class="footer-inner">
     <div class="footer-brand">
       <div class="footer-brand-head">
-        <img src="/brand_assets/WhatsApp Image 2026-06-12 at 4.33.23 PM.jpeg" alt="Weston Engineers"/>
+        <img src="/brand_assets/weston-logo.png" alt="Weston Engineers"/>
         <span>WESTON ENGINEERS</span>
       </div>
       <p>Weston Engineers is a project management consultancy based in New Town, Kolkata. With a strong focus on quality, safety, and transparent billing, we deliver reliable construction and infrastructure outcomes tailored to modern demands.</p>
@@ -180,9 +237,9 @@
     <div class="footer-col">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="/index.html">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/services.html">Services</a></li>
-        <li><a href="/blog/index.html">Blog</a></li>
+        <li><a href="/blog/">Blog</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/projects.html">Projects</a></li>
         <li><a href="/contact.html">Contact</a></li>
@@ -196,7 +253,7 @@
         <li><a href="/locations/new-town.html">New Town</a></li>
         <li><a href="/locations/rajarhat.html">Rajarhat</a></li>
         <li><a href="/locations/salt-lake.html">Salt Lake</a></li>
-        <li><a href="/locations/index.html">View All Service Areas</a></li>
+        <li><a href="/locations/">View All Service Areas</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -210,7 +267,7 @@
       </address>
     </div>
   </div>
-  <div class="footer-bottom">Copyright &copy;2026 WESTON ENGINEERS. All rights reserved.</div>
+  <div class="footer-bottom">Copyright &copy;2026 WESTON ENGINEERS. All rights reserved. &middot; <a href="/privacy-policy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms of Use</a></div>
 </footer>
 
 <script src="/script.js" defer></script>

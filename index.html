@@ -18,12 +18,12 @@
 <meta property="og:title" content="Weston Engineers — Project Management Consultancy, Kolkata"/>
 <meta property="og:description" content="Weston Engineers — PMC in New Town, Rajarhat, Kolkata. Site supervision, quality control, and construction management across West Bengal."/>
 <meta property="og:url" content="https://westonengineer.com/"/>
-<meta property="og:image" content="https://westonengineer.com/brand_assets/WhatsApp%20Image%202026-06-12%20at%204.33.23%20PM.jpeg"/>
+<meta property="og:image" content="https://westonengineer.com/brand_assets/og/weston-og.jpg"/>
 <meta property="og:locale" content="en_IN"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Weston Engineers — Project Management Consultancy, Kolkata"/>
 <meta name="twitter:description" content="Weston Engineers — PMC in New Town, Rajarhat, Kolkata. Site supervision, quality control, and construction management across West Bengal."/>
-<meta name="twitter:image" content="https://westonengineer.com/brand_assets/WhatsApp%20Image%202026-06-12%20at%204.33.23%20PM.jpeg"/>
+<meta name="twitter:image" content="https://westonengineer.com/brand_assets/og/weston-og.jpg"/>
 <script>(function(){try{var t=localStorage.getItem('westonTheme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <link rel="stylesheet" href="/styles.css"/>
 <script defer src="/_vercel/insights/script.js"></script>
@@ -32,7 +32,7 @@
   "@context": "https://schema.org",
   "@type": "GeneralContractor",
   "name": "Weston Engineers",
-  "image": "https://westonengineer.com/brand_assets/WhatsApp%20Image%202026-06-12%20at%204.33.23%20PM.jpeg",
+  "image": "https://westonengineer.com/brand_assets/weston-logo.png",
   "url": "https://westonengineer.com/",
   "telephone": "+91-9051517176",
   "email": "info@westonengineer.com",
@@ -53,11 +53,6 @@
     "name": "Firoz Shaikh",
     "jobTitle": "Founder, Weston Engineers",
     "url": "https://westonengineer.com/about.html"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "7"
   },
   "sameAs": [
     "https://www.instagram.com/westonengineers007/",
@@ -81,7 +76,7 @@
     {
       "@type": "Question",
       "name": "How much does a PMC service cost in Kolkata?",
-      "acceptedAnswer": { "@type": "Answer", "text": "It depends on project size, duration, and scope. We give a straight quote after understanding your project, not a generic rate card." }
+      "acceptedAnswer": { "@type": "Answer", "text": "It depends on the type of engagement. Full PMC on a multi-unit development is usually priced as a percentage of construction cost. Periodic site supervision is billed per visit or as a monthly retainer. BOQ verification and billing audits are a one-off lump sum based on project size, and independent quality audits are charged per inspection. What moves the number: project duration, the number of trades on site, site access, and whether drawings are ready. Share your drawings or contractor quote and we'll send a written quote." }
     },
     {
       "@type": "Question",
@@ -108,28 +103,20 @@
 </script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
-<script type="importmap">
-{
-  "imports": {
-    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
-  }
-}
-</script>
 </head>
 <body>
 
 <!-- NAVBAR -->
 <header class="navbar" id="navbar">
   <div class="nav-inner">
-    <a href="/index.html" class="nav-logo">
-      <img src="/brand_assets/WhatsApp Image 2026-06-12 at 4.33.23 PM.jpeg" alt="Weston Engineers"/>
+    <a href="/" class="nav-logo">
+      <img src="/brand_assets/weston-logo.png" alt="Weston Engineers"/>
       <span class="nav-brand-text">WESTON ENGINEERS</span>
     </a>
     <ul class="nav-links">
-      <li><a href="/index.html" class="active">Home</a></li>
+      <li><a href="/" class="active">Home</a></li>
       <li><a href="/services.html">Services</a></li>
-      <li><a href="/blog/index.html">Blog</a></li>
+      <li><a href="/blog/">Blog</a></li>
       <li><a href="/about.html">About</a></li>
       <li><a href="/projects.html">Projects</a></li>
       <li><a href="/contact.html">Contact</a></li>
@@ -177,9 +164,9 @@
   </div>
   <nav class="mobile-nav" id="mobile-nav">
     <ul>
-      <li><a href="/index.html" class="active">Home</a></li>
+      <li><a href="/" class="active">Home</a></li>
       <li><a href="/services.html">Services</a></li>
-      <li><a href="/blog/index.html">Blog</a></li>
+      <li><a href="/blog/">Blog</a></li>
       <li><a href="/about.html">About</a></li>
       <li><a href="/projects.html">Projects</a></li>
       <li><a href="/contact.html">Contact</a></li>
@@ -192,7 +179,7 @@
 <!-- HERO -->
 <section class="hero" id="hero">
   <div class="hero-3d-wrap" id="hero-3d-wrap">
-    <video id="hero-bg-video" src="/media/airplane-landing-kolkata.mp4" muted playsinline autoplay loop preload="auto"></video>
+    <video id="hero-bg-video" data-src="/media/airplane-landing-kolkata.mp4" poster="/media/posters/airplane-landing-kolkata.jpg" muted playsinline loop preload="none"></video>
   </div>
   <div class="hero-overlay">
     <div class="hero-overlay-inner">
@@ -266,7 +253,7 @@
         <h3>Site Works &amp; Infrastructure</h3>
         <p>Excavation, demolition, and road construction handled safely.</p>
       </a>
-      <a class="tilt-card" href="/services/project-management-consultancy.html">
+      <a class="tilt-card" href="/services.html">
         <div class="icon">CE</div>
         <h3>Civil Engineering Consulting</h3>
         <p>Independent technical advisory and due diligence before you commit.</p>
@@ -282,9 +269,9 @@
 <section class="stats-section">
   <div class="container">
     <div class="stats-row">
-      <div class="stat-item"><div class="stat-num" data-target="32" data-suffix="+">0</div><div class="stat-label">Services Offered</div></div>
+      <div class="stat-item"><div class="stat-num" data-target="32" data-suffix="+">32+</div><div class="stat-label">Services Offered</div></div>
       <div class="stat-item"><div class="stat-num">5.0&#9733;</div><div class="stat-label">Client Rating</div></div>
-      <div class="stat-item"><div class="stat-num" data-target="300" data-suffix="+">0</div><div class="stat-label">Happy Customers</div></div>
+      <div class="stat-item"><div class="stat-num" data-target="300" data-suffix="+">300+</div><div class="stat-label">Happy Customers</div></div>
     </div>
   </div>
 </section>
@@ -313,7 +300,7 @@
     <p class="section-sub">Practical, no-fluff answers to the questions we get asked before every project.</p>
     <div class="blog-grid">
       <a class="blog-card" href="/blog/what-does-a-pmc-company-do.html">
-        <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=700&q=80&fit=crop&auto=format" alt="What does a PMC company do" loading="lazy"/></div>
+        <div class="blog-card-img"><img src="/brand_assets/projects/water-tower-construction-2.webp" alt="Water tower nearing completion, New Town (Weston Engineers project)" loading="lazy"/></div>
         <div class="blog-card-body">
           <div class="blog-card-tag">PMC Basics</div>
           <h3>What Does a PMC Company Actually Do?</h3>
@@ -322,7 +309,7 @@
         </div>
       </a>
       <a class="blog-card" href="/blog/boq-vs-estimation-difference.html">
-        <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1630061712710-2539eb457c55?w=700&q=80&fit=crop&auto=format" alt="BOQ vs estimation difference" loading="lazy"/></div>
+        <div class="blog-card-img"><img src="/brand_assets/projects/market-development-2.webp" alt="New Town Market development (Weston Engineers project)" loading="lazy"/></div>
         <div class="blog-card-body">
           <div class="blog-card-tag">Cost Control</div>
           <h3>BOQ vs. Estimation: What's the Difference?</h3>
@@ -331,7 +318,7 @@
         </div>
       </a>
       <a class="blog-card" href="/blog/how-to-select-construction-contractor-new-town.html">
-        <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1747192904662-e03e8da1e0ab?w=700&q=80&fit=crop&auto=format" alt="How to select a construction contractor in New Town" loading="lazy"/></div>
+        <div class="blog-card-img"><img src="/brand_assets/projects/upcoming-project-2.webp" alt="Echo Tower G+4 residential building design, New Town" loading="lazy"/></div>
         <div class="blog-card-body">
           <div class="blog-card-tag">Hiring a Contractor</div>
           <h3>How to Select a Contractor in New Town</h3>
@@ -341,7 +328,7 @@
       </a>
     </div>
     <div class="section-cta-row">
-      <a href="/blog/index.html" class="btn btn-outline">Read All Articles</a>
+      <a href="/blog/" class="btn btn-outline">Read All Articles</a>
     </div>
   </div>
 </section>
@@ -354,7 +341,7 @@
     <div class="testi-strip">
       <div class="testi-card">
         <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p>&ldquo;We are very good construction consultancy &#8212; very fine, you can rely on them for your construction needs.&rdquo;</p>
+        <p>&ldquo;[A] very good construction consultancy &#8212; very fine, you can rely on them for your construction needs.&rdquo;</p>
         <div class="testi-name">Akram A.</div>
         <div class="testi-time">Google Review</div>
       </div>
@@ -386,7 +373,7 @@
       </details>
       <details class="faq-item">
         <summary>How much does a PMC service cost in Kolkata?</summary>
-        <p>It depends on project size, duration, and scope &#8212; a full PMC engagement on a multi-unit development costs differently than periodic site supervision on a single home. We give a straight quote after understanding your project, not a generic rate card. Contact us for a free project audit.</p>
+        <p>It depends on the type of engagement. Full PMC on a multi-unit development is usually priced as a percentage of construction cost. Periodic site supervision is billed per visit or as a monthly retainer. BOQ verification and billing audits are a one-off lump sum based on project size, and independent quality audits are charged per inspection. What moves the number: project duration, the number of trades on site, site access, and whether drawings are ready. Share your drawings or contractor quote and we'll send a written quote.</p>
       </details>
       <details class="faq-item">
         <summary>Do you only work in New Town and Rajarhat?</summary>
@@ -425,7 +412,7 @@
   <div class="footer-inner">
     <div class="footer-brand">
       <div class="footer-brand-head">
-        <img src="/brand_assets/WhatsApp Image 2026-06-12 at 4.33.23 PM.jpeg" alt="Weston Engineers"/>
+        <img src="/brand_assets/weston-logo.png" alt="Weston Engineers"/>
         <span>WESTON ENGINEERS</span>
       </div>
       <p>Weston Engineers is a project management consultancy based in New Town, Kolkata. With a strong focus on quality, safety, and transparent billing, we deliver reliable construction and infrastructure outcomes tailored to modern demands.</p>
@@ -440,9 +427,9 @@
     <div class="footer-col">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="/index.html">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/services.html">Services</a></li>
-        <li><a href="/blog/index.html">Blog</a></li>
+        <li><a href="/blog/">Blog</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/projects.html">Projects</a></li>
         <li><a href="/contact.html">Contact</a></li>
@@ -456,7 +443,7 @@
         <li><a href="/locations/new-town.html">New Town</a></li>
         <li><a href="/locations/rajarhat.html">Rajarhat</a></li>
         <li><a href="/locations/salt-lake.html">Salt Lake</a></li>
-        <li><a href="/locations/index.html">View All Service Areas</a></li>
+        <li><a href="/locations/">View All Service Areas</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -470,7 +457,7 @@
       </address>
     </div>
   </div>
-  <div class="footer-bottom">Copyright &copy;2026 WESTON ENGINEERS. All rights reserved.</div>
+  <div class="footer-bottom">Copyright &copy;2026 WESTON ENGINEERS. All rights reserved. &middot; <a href="/privacy-policy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms of Use</a></div>
 </footer>
 
 <div class="promo-modal-overlay" id="promo-modal-overlay">
